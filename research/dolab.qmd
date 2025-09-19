@@ -1,0 +1,22 @@
+---
+title: "Bao Do Lab"
+description: "Research in computer vision-based radiology diagnosis through developing training and testing datasets."
+author: "Erin Wang"
+date-start: "July 2021"
+date-end: "July 2022"
+advisor: "Dr. Bao Do"
+categories:
+  - computer vision
+  - neural network models 
+  - validation and testing
+draft: false
+---
+## Motivation
+
+## Research Work
+
+## Documentation
+
+## Published Papers
+
+## Acknowledgements

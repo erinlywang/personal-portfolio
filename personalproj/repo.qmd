@@ -1,0 +1,24 @@
+---
+title: "REPO Project"
+description: "Building an animatronic designed after the main robot from the REPO game"
+author: "Erin Wang"
+date-start: "May 2025"
+date-end: "Present"
+collaborator: "Natalie Ko"
+categories:
+  - robotics
+  - automation
+  - servo
+  - CAD Design
+  - STM32 interface
+draft: false
+---
+## Motivation
+
+## Project Work
+
+## Documentation
+
+## Patent Information
+
+## Acknowledgements

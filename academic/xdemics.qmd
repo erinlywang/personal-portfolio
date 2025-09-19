@@ -1,0 +1,24 @@
+---
+title: "XDemics Clinic Project"
+description: "Working as the co-lead of a consulting team for the biotech company XDemics to automate bioreactor manipulation."
+author: "Erin Wang"
+date-start: "August 2025"
+date-end: "May 2026"
+advisor: "Professor Angie Lee"
+categories:
+  - robotics
+  - mechatronics
+  - automation
+  - servos
+  - cell cultures
+draft: false
+---
+## Motivation
+
+## Project Work
+
+## Documentation
+
+## Patent Information
+
+## Acknowledgements

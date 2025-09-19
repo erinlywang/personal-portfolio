@@ -1,0 +1,26 @@
+---
+title: "Physics of Soft Matter (PoSM) Lab"
+description: "Research on the Slingshot Spider project in designing an energy-efficient slingshot robot."
+author: "Erin Wang"
+date-start: "January 2024"
+date-end: "May 2024"
+advisor: "Professor Mark Ilton"
+categories:
+  - biomechanics
+  - bio-inspired robotics
+  - material science
+  - quick prototyping
+draft: false
+---
+
+## Motivation
+The Physics of Soft Matter (PoSM) Lab focuses on the research of soft elastic solids to understand biological movement and its applications in robotics. The Slingshot Spider project revolved around researching latch-mediated spring actuation through reproducing the slingshot spider's elastic web in a bioinspired robotic mechanism.
+
+## Research Work
+Although I only got to work on this project briefly, I really enjoyed the quick prototyping and experimenting with different web designs and materials. Throughout the semester, I worked on building and testing low resolution prototypes using embroidery hoops, string, tape, and sticky toys as projectiles. 
+
+(insert a picture of the web prototype)
+
+One notable prototype launched a sticky projectile onto the ceiling where it stayed for the rest of the semester. I explored different web designs to investigate the ways in which web geometry and materials and projectile material impacts performance and energy efficiency when launching.
+
+## Acknowledgements

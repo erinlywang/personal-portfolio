@@ -1,0 +1,18 @@
+---
+title: "Contract Work"
+description: "Contract work to model a Farina Tedt chip with a coordinates verification test."
+author: "Erin Wang"
+date-start: "August 2025"
+date-end: "September 2025"
+contractor: "Professor Angie Lee"
+categories:
+  - 3D CAD Design
+  - SolidWorks
+  - data verification
+draft: false
+---
+## Motivation
+
+## Project Work
+
+## Documentation

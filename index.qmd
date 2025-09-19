@@ -1,0 +1,19 @@
+---
+title: "E155 Portfolio"
+image: images/headshot.jpg
+about:
+    template: jolla
+    links:
+        - icon: linkedin
+          text: LinkedIn
+          href: www.linkedin.com/in/erin-wang-1458a9236
+        - icon: github
+          text: Github
+          href: https://github.com/erinlywang
+
+---
+
+Erin Wang is a senior engineering major at [Harvey Mudd College](https://hmc.edu). Her interests are in robotics and mechatronics specifically for building animatronics in theme parks. One of her personal projects is to build the robot from the REPO game with 3D printed material and off-the-shelf servo motors. The link to her Github can be found [here](https://github.com/erinlywang).
+
+After college, she aims to apply for Masters programs robotics, electrical engineering, or mechanical engineering. When she is not working hard in her classes, music and food fill her life. She loves to dance and sing as well as compose music, and she is always willing to try a new food place. 
+

@@ -1,0 +1,21 @@
+---
+title: "E80 AUV Project"
+description: "Building and designing an autonomous underwater robot to collect data from the ocean."
+author: "Erin Wang"
+date-start: "January 2023"
+date-end: "May 2023"
+advisor: "Professor Dre Helmns"
+categories:
+  - robotics
+  - automation
+  - sensor design
+  - control systems
+draft: false
+---
+## Motivation
+
+## Project Work
+
+## Documentation
+
+## Acknowledgements

@@ -1,0 +1,24 @@
+---
+title: "Trilobio Clinic Project"
+description: "Working on the consulting team for the lab automation company Trilobio to build a precise analytical scale."
+author: "Erin Wang"
+date-start: "August 2024"
+date-end: "December 2025"
+advisor: "Professor Leah Mendelson"
+categories:
+  - robotics
+  - automation
+  - mechanical engineering
+  - quick prototyping and design
+  - STM32 interface
+draft: false
+---
+## Motivation
+
+## Project Work
+
+## Documentation
+
+## Patent Information
+
+## Acknowledgements

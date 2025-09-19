@@ -1,0 +1,9 @@
+---
+title: "Personal Projects"
+listing:
+    contents: personalproj
+    sort: "date-start asc"
+    type: default
+    categories: false
+---
+

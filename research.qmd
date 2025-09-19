@@ -1,0 +1,9 @@
+---
+title: "Research Projects"
+listing:
+    contents: research
+    sort: "date-start asc"
+    type: default
+    categories: false
+---
+
