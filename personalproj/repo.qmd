@@ -2,9 +2,8 @@
 title: "REPO Project"
 description: "Building an animatronic designed after the main robot from the REPO game"
 author: "Erin Wang"
-date-start: "May 2025"
-date-end: "Present"
-collaborator: "Natalie Ko"
+subtitle: "May 2025 - Present"
+image: images/repomask.png
 categories:
   - robotics
   - automation
@@ -14,11 +13,36 @@ categories:
 draft: false
 ---
 ## Motivation
+My dream job is to actually work in the animatronic industry designing and building robots for theme park rides. I'm drawn to the combination of art, design, and engineering and the work of replicating biological motion in robotics that animatronics provides. However, there are very limited projects, classes, and clubs at my school to work on robotics and mechatronics. This summer, while doing research in the Biophotonics lab, I met Natalie Ko who is also interested in animatronics. We decided to start a personal project of building our own small animatronic over the summer and the following school year. 
+
+We decided on building the robot character from the game REPO. We took inspiration from an Instagram creator who builds and programs animatronics and had made a REPO robot with eyes that could move in different directions, arms that flap up and down, and a jaw that opens upon audio recognition. The project seemed feasible to do given the components are 3D printed and the motors are off-the-shelf 180^{o} servo motors. 
 
 ## Project Work
+Over the summer we focused on building the eye mechanism as we believed the eyes would likely be one of the most difficult parts of the design. 
+### Eye Prototype 1: The Swing
+Grabbing inspiration from a Youtube video on building animatronic eyes, we first started with an eye prototype that incorporated individual horizontal motion but shared vertical motion. The design required three servos, two servos for the horizontal movement of each eye, and then one servo to control the vertical movement through a swing that the both eyes sit on (@fig-eyeprot1). 
+
+![First eye prototype with two servos to control the horizontal motion of each eye. The image shows the prototype's ability to perform "cross-eye" motion. However, the prototype's "outward-eye" motion was much more limited than desired.](images/eyeprot1.jpg){#fig-eyeprot1}
+
+The biggest challenge we ran into with this prototype was the length of the horizontal arm that attached to the eye as the length allowed for a greater degree of movement in one horizontal direction and not the other. The complexity of the swing and its placement would also further affect the flexibility of movement of the horizontal servos. So instead we decided to forego the swing prototype and try controlling each eye individually.
+
+### Eye Prototype 2: Four Motor Socket
+This prototype gets its name from using four servo motors to control both eyes (two for each eye) such that each eye is able to move independently as well as the ball-socket rods that were used to allow for the eye to rotate without translating from its position (@fig-eyeprot2). 
+
+![Second eye prototype with four servos: one for horizontal motion and one for vertical motion of an individual eye. The image shows the prototype's attachment system to the eye itself and to the base that would attach to the head of the robot.](images/eyeprot2.jpg){#fig-eyeprot2}
+
+The biggest challenge we ran into with this prototype was figuring out the right eye size to allow large movement but still stay true to the robot's character design as well as the length of the rods connecting the servo and the ball/joint attached to the eye. However, this prototype was succesful! It provided a desirable motion range without translating meaning the eye will move around without getting stuck on the eye sockets of the robot's head.
+
+### Current and Future Direction
+We are currently making slow progress due to classes being in session. But our next steps are to design the jaw mechanism that rotates the head of the robot up around a hinge and separates the head from the bottom body to look like a the in-game character when its mouth is agape (@fig-jaw). 
+
+![REPO Robot character in-game opening its jaw.](images/repojawopen.jpg){#fig-jaw}
+
+Future work will include designing the electrical components such as the microphone to intake audio and open the jaw accordingly as well as programming the arduino code to move the eyes in a random or set pathway. 
 
 ## Documentation
-
-## Patent Information
+All CAD files and research are saved within an internally shared Google Drive. However, we would like to publish a Github Repo containing CAD files and software programs such that others can follow our project and build their own robot. 
 
 ## Acknowledgements
+I would like to acknowledge the Makerspace at Harvey Mudd College. This space hosts 3D printers and laser cutters for the students to use. Much of this project could not be realized without access to these resources. And a thanks to Natalie Ko for bringing this project to life with me! 
+

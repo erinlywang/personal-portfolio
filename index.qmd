@@ -1,5 +1,5 @@
 ---
-title: "E155 Portfolio"
+title: "Erin Wang Portfolio"
 image: images/headshot.jpg
 about:
     template: jolla

@@ -2,9 +2,8 @@
 title: "Bao Do Lab"
 description: "Research in computer vision-based radiology diagnosis through developing training and testing datasets."
 author: "Erin Wang"
-date-start: "July 2021"
-date-end: "July 2022"
-advisor: "Dr. Bao Do"
+subtitle: "July 2021 - July 2022"
+enddate: 2022-07-01
 categories:
   - computer vision
   - neural network models 
@@ -12,11 +11,15 @@ categories:
 draft: false
 ---
 ## Motivation
+The Do Lab focused on the applications of AI in the medical field, particularly in the use of object detection in reading Xray scans. The project that I was on involved training two neural networks: one to determine scoliosis measurements given a spine Xray and one to determine leg length differences given a lower body Xray. 
 
 ## Research Work
-
-## Documentation
+My work on the project involved preparing datasets for training and testing the AI. I annotated a large set of spine Xrays and lower body Xrays, boxing the thoracic versus lumbar vertebrae and calculating the cobb angle of the spine or the difference in length of the left and right leg. I was also walked through the use of Tensorflow for programming the AI. At the end, I edited both research papers that came out of the research. 
 
 ## Published Papers
+Ha, AY., Do, BH, Bartret, AL, Fang, CX, Hsiao, A., Lutz, AM, Banerjee, I., Riley, GM., Rubin, DL., Stevens, KJ, Wang, E., Wang, W., Beaulieu, CF., Hurt, B. Automating scoliosis measurements in radiographic studies with machine learning: *Comparing artificial intelligence and clinical reports. Journal of Digital Imaging*, 2022 February; 35: 524-533.
+
+Larson, N., Nguyen, C., Do, B., Kaul, A., Larson, A., Wang, S., Wang, E., Bultman, E., Stevens, K., Pai, J., Ha, A., Boutin, R., Fredericson, M., Do, L., Fang, C. *Artificial intelligence system for automatic quantitative analysis and radiology reporting of x-ray leg exams*. Journal of Digital Imaging 2022 July; 35: 1494-1505.
 
 ## Acknowledgements
+I want to acknowledge my advisor on this research, Dr. Bao Do, for the opportunity to join a research project in high school and have the experience of editing a research paper. I learned a lot about research documentation and workflow from being on this research project.

@@ -1,21 +1,39 @@
 ---
-title: "E80 AUV Project"
+title: "AUV Project"
 description: "Building and designing an autonomous underwater robot to collect data from the ocean."
 author: "Erin Wang"
-date-start: "January 2023"
-date-end: "May 2023"
-advisor: "Professor Dre Helmns"
+subtitle: "January 2023 - May 2023"
+enddate: 2023-05-01
+image: images/e80robot.jpg
 categories:
   - robotics
   - automation
   - sensor design
   - control systems
-draft: false
+draft: false 
 ---
+
 ## Motivation
+In the experimental engineering course (ENGR080) at Harvey Mudd, sophomore engineering students are divided into small teams and tasked to build and design an autonomous underwater robot to collect data from the ocean. The class is a semester long and is split into labs and a final project. The first two-thirds of the class are structured labs that build the skills in designing temperature, pressure, and turbidity sensors. The last third of the lab is deciding within the team a new sensor to design and building the robot to be able to sense temperature, pressure, and whatever the team decided for the third sensor.
 
 ## Project Work
+I worked mainly on building the electrical components of the sensors, specifically the temperature and a modified turbidity sensor (@fig-circdesign). I developed skills in designing circuit schematics, soldering circuits onto protoboards, and testing circuit functionality with oscilloscopes and multimeters (@fig-circboard). I worked mainly with thermistors, diodes, and op-amps in the circuit design. 
+
+::: {#fig-plots layout-ncol=2 layout-valign="bottom"}
+
+![Design of temperature sensor circuit with Desmos simulations for temperature range calculations.](images/e80circuitdesign.png){#fig-circdesign}
+
+![Breadboarded transimpedance amplifiers as well as diode drivers for the modified turbidity sensor.](images/e80circboard.jpg){#fig-circboard}
+
+:::
 
 ## Documentation
+Each lab required a written lab report detailing the methods and results of the lab (@fig-labrep). The end project required a technical proposal to describe the purpose of the new sensor and how the team aims to build the sensor, a technical memo that summarizes all sensor designs on the robot and the final results (@fig-techmemo), and a presentation of the content in the technical memo. 
 
-## Acknowledgements
+::: {#fig-plots layout-ncol=2 layout-valign="bottom"}
+![Example of template and description for a Lab Report writeup.](images/e80labreport.png){#fig-labrep}
+
+![Technical memo writeup for our AUV project.](images/techmemo.png){#fig-techmemo}
+
+Data for different sweep ranges of the reference mirror stage.
+:::

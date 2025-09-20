@@ -2,7 +2,7 @@
 title: "Academic Projects and Contract Work"
 listing:
     contents: academic
-    sort: "date-start asc"
+    sort: enddate
     type: default
     categories: false
 ---

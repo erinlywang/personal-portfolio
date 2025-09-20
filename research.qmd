@@ -2,7 +2,7 @@
 title: "Research Projects"
 listing:
     contents: research
-    sort: "date-start asc"
+    sort: enddate
     type: default
     categories: false
 ---

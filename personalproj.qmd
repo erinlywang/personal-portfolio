@@ -2,7 +2,7 @@
 title: "Personal Projects"
 listing:
     contents: personalproj
-    sort: "date-start asc"
+    sort: enddate
     type: default
     categories: false
 ---

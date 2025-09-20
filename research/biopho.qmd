@@ -2,43 +2,282 @@
 title: "Biophotonics Lab"
 description: "Research on the Monitoring the Rhizosphere Project to map root systems using low-coherence interferometry."
 author: "Erin Wang"
-date-start: "May 2024"
-date-end: "Present"
-advisor: "Professor Joshua Brake"
-collaborators: "Grey Seymour, Audrey Gruian"
+subtitle: "May 2024 - Present"
+enddate: 2026-05-01
+image: images/biophologo.png
 categories:
   - biophotonics
   - optics
   - python programming
   - data analysis
 draft: false
+jupyter: python3
+code-block-bg: true
+code-block-border-left: "#419aecff"
 ---
 ## Motivation
 The [Biophotonics Lab](https://pages.hmc.edu/biophotonics/) at Harvey Mudd College focuses on building optical tools for applications in biomedicine and agriculture.
 
-The [Rhizosphere project](https://pages.hmc.edu/biophotonics/projects/rhizosphere/) is working on designing an optical tool that can non-invasively map out root systems and possibly characterize root health using the light-piping properties of plant stems. The project's scope revolves around evaluating the ability of low coherence interferometry in producing depth scans of the *Arabidopsis Thaliana* root *in situ*. 
+![Proposed system of the optical tool to evaluate plant health that would measure light backscatter from the roots of a plant sample.](images/projectproposal.png){#fig-proposal}
+
+The [Rhizosphere project](https://pages.hmc.edu/biophotonics/projects/rhizosphere/) is working on designing an optical tool that can non-invasively map out root systems and possibly characterize root health using the light-piping properties of plant stems (@fig-proposal). The project's scope revolves around evaluating the ability of low coherence interferometry in producing depth scans of the *Arabidopsis Thaliana* root *in situ*. 
 
 ## Research Work
 My role on the Rhizosphere project mainly involves designing, building, aligning, and testing the optical systems including automating data collection. My inital work on the project (2024) was to build a system that could image a mung bean stem and measure light transmission through the stem. With my lab partner, Audrey Gruian, I constructed a USB camera microscope that magnified the mung bean stem enough to visualize the stem's hollow center. We were able to take images of the mung bean stem using this apparatus. 
 
-I then worked on a mung bean "cage" setup to measure light transmission through the stem by feeding red He-Ne laser light into the stem by way of an optical fiber and capturing the transmitted light with a photodetector. Through this setup, we were able to measure changes in transmission across mung beans of different length as well as visualize the drop off of transmission as the stem wilts. 
+I then worked on a mung bean "cage" setup to measure light transmission through the stem by feeding red He-Ne laser light into the stem by way of an optical fiber and capturing the transmitted light with a photodetector (@fig-transmission). Through this setup, we were able to measure changes in transmission across mung beans of different length as well as visualize the drop off of transmission as the stem wilts. 
 
-(Insert picture of setup and data)
+![Setup of transmission measurement with the He-Ne laser being fed by fiber into the mung bean plant and captured by a Si Photodetector.](images/transmissionsetup.png){#fig-transmission}
 
 This past summer (2025), I worked with Grey Seymour on moving towards measuring backscatter rather than transmission and towards using *Arabidopsis Thaliana* instead of mung beans for its applicability to a wide range of flowering plants. I first started by building an interferometer with an electrical optical modulator (EOM) to manipulate the phase of the reference wave. I wrote a Python program using the `nidaqmx` package to capture the data from our data acquistion device and fit the curve to the expected sinusoidal interference equation.
 
-However, due to the sensitivity of our system to miniscule changes in the environment (e.g. slight table movement, activity from the other lab members, etc.), the wide variability of the results proved inconclusive in verifying the EOM interferometry setup. We decided to move towards a low coherence interferometer (LCI) setup to preserve a high resolution in measurements while limiting the sensitivity to environmental variables. Towards the end of the summer, I wrote a Python script on Colab to simulate and understand the expected interference pattern and coherence length of a monochrome (single wavelength) source versus a broadband source. Then, I designed, built, and aligned an LCI interferometer with a near-infrared super luminescent diode as its broadband source. The end of the summer was the beginning of attempting to verify the LCI setup using a TIR retroreflector as the sample. I wrote a program incorporating the `nidaqmx` and `pylablib` packages to automate collecting data while moving the reference mirror stage.  
+However, due to the sensitivity of our system to miniscule changes in the environment (e.g. slight table movement, activity from the other lab members, etc.), the wide variability of the results proved inconclusive in verifying the EOM interferometry setup. We decided to move towards a low coherence interferometer (LCI) setup to preserve a high resolution in measurements while limiting the sensitivity to environmental variables (@fig-lcidrawing and @fig-lcipic). 
 
-(insert picture of setup)
+::: {#fig-plots layout-ncol=2 layout-valign="bottom"}
+![A drawing of the Low Coherence Interferometer (LCI) setup with an 850 nm super luminescent diode (SLD) feeding into a polarizer, then split 50:50 by a 2x2 coupler into a sample and reference beam that when reflected recombine into the photodiode (PD). The signal is then fed into a photodiode amplifier (PA), read by the data acquistion device (NiDAQ), and saved on the computer through code.](images/lcidrawing.png){#fig-lcidrawing}
+
+![A labeled picture of the physical in-lab LCI setup. The sample in this setup is a TIR retroreflection with an AR coating for 350-700 nm.](images/lcipicture.png){#fig-lcipic}
+
+:::
+
+Towards the end of the summer, I wrote a Python script on Colab to simulate and understand the expected interference pattern and coherence length of a monochrome (single wavelength) source versus a broadband source. Then, I designed, built, and aligned an LCI interferometer with a near-infrared super luminescent diode as its broadband source. The end of the summer was the beginning of attempting to verify the LCI setup using a TIR retroreflector as the sample. I wrote a program incorporating the `nidaqmx` and `pylablib` packages to automate collecting data while moving the reference mirror stage (see code block below).  
+
+<details>
+<summary>Code: My non-executable code</summary>
+```{.python filename="LCISweepCONTINUOUS.py"}
+from pylablib.devices import Thorlabs
+import nidaqmx
+from nidaqmx.constants import TerminalConfiguration, AcquisitionType, READ_ALL_AVAILABLE
+import matplotlib.pyplot as plt
+import csv
+import numpy as np
+import os
+import time
+from datetime import datetime
+from scipy.fft import fft, fftfreq
+from scipy.optimize import curve_fit
+
+def create_folder(folder_name):
+    try:
+        os.mkdir(folder_name)
+        print(f"Folder '{folder_name}' created successfully.")
+    except FileExistsError:
+        print(f"Folder '{folder_name}' already exists.")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+def move_to_folder(folder_name):
+    try:
+        os.chdir(folder_name)
+        print(f"Current directory changed to: {os.getcwd()}")
+    except FileNotFoundError:
+        print(f"Folder '{folder_name}' not found.")
+    except NotADirectoryError:
+        print(f"'{folder_name}' is not a directory.")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+def create_csv_file(filename, fields, datarows):
+    with open(filename, 'w') as csvfile:
+        # create csv writer object
+        csvwriter = csv.writer(csvfile, lineterminator='\n')
+
+        # writing the fields
+        csvwriter.writerow(fields)
+
+        # writing the data rows
+        csvwriter.writerows(datarows)
+
+def take_data():
+    with nidaqmx.Task() as task:
+        task.ai_channels.add_ai_voltage_chan("Dev1/ai1", 
+                                            max_val=10, 
+                                            terminal_config= TerminalConfiguration.RSE)
+
+        task.timing.cfg_samp_clk_timing(1000000, 
+                                        sample_mode=AcquisitionType.FINITE, 
+                                        samps_per_chan=1000)
+        rawdata = task.read(READ_ALL_AVAILABLE)
+    return rawdata
+
+def find_amp(data):
+    sorted_data = sorted(data)
+
+    # calculate minimum average of bottom 100 values
+    averagemin = np.mean(sorted_data[0:99])
+
+    # calculate maximum average of top 100 values
+    averagemax = np.mean(sorted_data[len(sorted_data)-100:len(sorted_data)])
+
+    # calculate amplitude
+    amplitude = averagemax - averagemin
+    return amplitude
+
+def find_average(matrix):
+    # Calculate the average of each row
+    averages = np.mean(matrix, axis=1)
+    avg_amplitudes = list(map(float, averages))
+    return avg_amplitudes
+
+def find_std(matrix):
+    # Calculate the standard deviation of each row
+    std_devs = np.std(matrix, axis=1)
+    std_amplitudes = list(map(float, std_devs))
+    return std_amplitudes
+
+def get_serial(value):
+    devices = Thorlabs.list_kinesis_devices()
+    device_tuple = devices[value]
+    serial = device_tuple[0]
+    return serial
+
+def get_devices():
+    print(Thorlabs.list_kinesis_devices())
+
+## Define class for Kinesis stage
+
+class KinesisStage(Thorlabs.KinesisPiezoMotor):
+    def __init__(self, serial):
+        super().__init__(serial)
+
+    def set_def_channel(self, value):
+        self.set_default_channel(value)
+        print(" Default channel:", value)
+
+    def move_forward(self, value):
+        self.move_by(value)
+        time.sleep(4)
+        print("Stage moved forward by " + str(value) + ".")
+        position = self.get_position()
+        print("Current Position: ", position)
+
+    def move_back(self, value):
+        self.move_by(-value)
+        time.sleep(4)
+        print("Stage moved backward by " + str((-value)) + ".")
+        position = self.get_position()
+        print("Current Position: ", position)
+
+    def zero_position(self):
+        self.move_to(0)
+        time.sleep(4)
+        print("Stage position set to 0.")
+        position = self.get_position()
+        print("Current Position: ", position)
+
+
+# Get serial number of motor
+serial = get_serial(0)
+
+# Make stage object to move stage
+stage = KinesisStage(serial)
+stage.set_def_channel(2)
+
+# Set up how many test and trials and date
+testnum = 1
+trialnum = 1
+date = datetime.now().strftime("%m-%d-%y")
+
+test_folder = "Test " + str(testnum)
+
+create_folder(test_folder)
+move_to_folder(test_folder)
+
+# Set up initial parameters for collecting sweep data
+sample_rate = 1000000  # Sample rate in Hz
+sample_count = 1000  # Number of samples to collect
+
+# setup lists to store data for each input voltage
+trial_var = {}
+N_x = 100
+start_pos = 5000000
+end_pos = start_pos-100000-N_x
+x = np.arange(start_pos, end_pos, -N_x) 
+
+# Set the stage to the initial point
+stage.move_to(start_pos)
+
+
+# setup lists to store fields for csv files
+test_fields = ['x position']
+for number in range(1, trialnum+1):
+    test_fields.append(f'Trial {number}')
+
+test_data = list(x)
+
+current_position = stage.get_position()
+
+trial_data = []
+    
+with nidaqmx.Task() as task:
+    task.ai_channels.add_ai_voltage_chan("Dev1/ai1", 
+                                        max_val=10, 
+                                        terminal_config= TerminalConfiguration.RSE)
+
+    task.timing.cfg_samp_clk_timing(1000000, 
+                                    sample_mode=AcquisitionType.CONTINUOUS, 
+                                    samps_per_chan=50000)
+    
+    task.start()
+    print('Task started.    Data acquiring...')
+    while current_position > end_pos:
+        stage.jog('-')
+        rawdata = task.read(number_of_samples_per_channel=100)
+        rawdata_avg = np.average(rawdata)
+        trial_data.append(rawdata_avg)
+    task.stop()
+    print('Task stopped.')
+
+
+# time.sleep(0.5)
+
+# rawdata = take_data()
+
+
+
+test_data = np.vstack([test_data, trial_data])
+stage.stop()
+
+# Create a csv file with the position and all the trial data
+testfilename = date + '_ALLTRIALSLCISweep_Test' + str(testnum) + '.csv'
+test_datarows = np.transpose(test_data)
+create_csv_file(testfilename, test_fields, test_datarows)
+
+## Find average of all trials
+
+test_data_nox = test_datarows[:,1:]         # removes x position column
+averages = find_average(test_data_nox)
+std_devs = find_std(test_data_nox)
+avg_test_data = np.transpose(np.vstack([list(x),averages,std_devs]))
+
+avgdatafields = ['x position', 'Average Vout [V]', 'Standard Dev [V]']
+avgdataname = date + '_AveragedLCISweep_Test' + str(testnum) 
+avgdatafilename = avgdataname + '.csv'
+create_csv_file(avgdatafilename, avgdatafields, avg_test_data)
+
+# save plot of data for each trial and vin
+plt.figure()
+plt.errorbar(list(x), averages, yerr=std_devs, fmt='o')
+plt.xlabel("x position")
+plt.ylabel('Voltage [V]')
+plt.title("Test " + str(testnum) + ": LCI Sweep Data")
+plt.savefig(avgdataname +'.png')
+# plt.show(block=True)
+
+os.chdir('..')        
+```
+</details>
 
 We are currently still working on taking this verification data due to challenges with capturing the whole range of the reference mirror stage. We hope to finish verifying the LCI setup and move to implementing the Arabidopsis stem to present for the SPIE conference in the Spring. 
 
 ## Documentation
-Daily lab notebooks were kept on Confluence along with a weekly summary and all lab notebooks linked on a parent page. Each lab notebook contained a checklist of action items for the day, a section for what was completed that day/where we were stuck/what action items were planned for the next day, and a section for detailed documentation of our work that day. Weekly summaries included what was achieved that week and what goals we were setting for the next week. I learned greatly in this lab how important documentation can be especially when reproducing lab setups and revisiting results. I also worked with a different lab partner my second summer in the lab. The daily lab notebooks were incredible handy in onboarding the new member. 
+Daily lab notebooks were kept on Confluence along with a weekly summary and all lab notebooks linked on a parent page. Each lab notebook contained a checklist of action items for the day, a section for what was completed that day/where we were stuck/what action items were planned for the next day, and a section for detailed documentation of our work that day (@fig-notebook). Weekly summaries included what was achieved that week and what goals we were setting for the next week. I learned greatly in this lab how important documentation can be especially when reproducing lab setups and revisiting results. I also worked with a different lab partner my second summer in the lab. The daily lab notebooks were incredible handy in onboarding the new member. 
 
-In addition to daily lab notebooks, over the summer terms we had two presentations we gave to the rest of the research groups in the program as well as a summary of our summer progress in a white paper and a poster. The poster was presented at a gallery walk in front of the school where students and staff could ask about our experience and research in the lab. 
+![Example of daily notebook for documenting research progress. Structure includes overarching goals for the summer, action items for the day, a summary for what was finished, where we got stuck, and action items for the next day, and detailed notes of the procedure for the day.](images/dailynotebook.png){#fig-notebook}
 
-(insert picture of poster presentation)
+In addition to daily lab notebooks, over the summer terms we had two presentations we gave to the rest of the research groups in the program as well as a summary of our summer progress in a white paper and a poster. The poster is presented at a gallery walk in front of the school where students and staff could ask about our experience and research in the lab (@fig-poster). 
+
+![Monitoring the Rhizosphere poster for Fall 2026 summer research presentations.](images/rhizoposter.jpg){#fig-poster}
 
 ## White Paper Links
 

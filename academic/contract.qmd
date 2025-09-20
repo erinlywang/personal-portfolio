@@ -2,17 +2,18 @@
 title: "Contract Work"
 description: "Contract work to model a Farina Tedt chip with a coordinates verification test."
 author: "Erin Wang"
-date-start: "August 2025"
-date-end: "September 2025"
-contractor: "Professor Angie Lee"
+subtitle: "August 2025 - September 2025"
+enddate: 2025-09-01
 categories:
   - 3D CAD Design
   - SolidWorks
   - data verification
 draft: false
 ---
-## Motivation
-
 ## Project Work
+I was asked to create a 3D CAD model for a Farina Tedt chip and a system for verifying the coordinates of the soldering bumps on the chip match the provided coordinates. 
+
+I used SolidWorks to create the CAD file with manual placement of the bumps. I programmed the SolidWorks API to output the coordinates of the bumps then setup the csv file to check the output coordinates against the given coordinates with easy detection of mismatched coordinates. 
 
 ## Documentation
+The deliverables for the contract work included .STEP files of the base chip, the solder bump, and the assembly with the manually placed bumps, a mechanical drawing of both the completed assembly and the individual bump, a coordinate verification system, and a summarized report of the contract work. 
