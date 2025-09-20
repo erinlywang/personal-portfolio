@@ -1,0 +1,13 @@
+{
+  "listingMap": {
+    "personalproj.qmd": [
+      "personalproj"
+    ],
+    "projects.qmd": [
+      "academic"
+    ],
+    "research.qmd": [
+      "research"
+    ]
+  }
+}
