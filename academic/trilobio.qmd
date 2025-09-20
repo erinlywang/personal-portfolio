@@ -2,8 +2,8 @@
 title: "Trilobio Clinic Project"
 description: "Working on the consulting team for the lab automation company Trilobio to build a precise analytical scale."
 author: "Erin Wang"
-subtitle: "August 2024 - December 2025"
-enddate: 2025-12-01
+subtitle: "August 2024 - December 2024"
+enddate: 2024-12-01
 image: images/trilobiologo.jpg
 categories:
   - robotics

@@ -7,18 +7,25 @@
     "text": "Bao Do Lab\n\n\nJuly 2021 - July 2022\n\n\nResearch in computer vision-based radiology diagnosis through developing training and testing datasets.\n\n\n\n\n\nErin Wang\n\n\n\n\n\n\n\n\n\n\n\n\nPhysics of Soft Matter (PoSM) Lab\n\n\nJanuary 2024 - May 2024\n\n\nResearch on the Slingshot Spider project in designing an energy-efficient slingshot robot.\n\n\n\n\n\nErin Wang\n\n\n\n\n\n\n\n\n\n\n\n\nBiophotonics Lab\n\n\nMay 2024 - Present\n\n\nResearch on the Monitoring the Rhizosphere Project to map root systems using low-coherence interferometry.\n\n\n\n\n\nErin Wang\n\n\n\n\n\n\nNo matching items"
   },
   {
+    "objectID": "research/dolab.html",
+    "href": "research/dolab.html",
+    "title": "Bao Do Lab",
+    "section": "",
+    "text": "The Do Lab focused on the applications of AI in the medical field, particularly in the use of object detection in reading Xray scans. The project that I was on involved training two neural networks: one to determine scoliosis measurements given a spine Xray and one to determine leg length differences given a lower body Xray."
+  },
+  {
+    "objectID": "research/dolab.html#motivation",
+    "href": "research/dolab.html#motivation",
+    "title": "Bao Do Lab",
+    "section": "",
+    "text": "The Do Lab focused on the applications of AI in the medical field, particularly in the use of object detection in reading Xray scans. The project that I was on involved training two neural networks: one to determine scoliosis measurements given a spine Xray and one to determine leg length differences given a lower body Xray."
+  },
+  {
     "objectID": "research/dolab.html#research-work",
     "href": "research/dolab.html#research-work",
     "title": "Bao Do Lab",
     "section": "Research Work",
     "text": "Research Work\nMy work on the project involved preparing datasets for training and testing the AI. I annotated a large set of spine Xrays and lower body Xrays, boxing the thoracic versus lumbar vertebrae and calculating the cobb angle of the spine or the difference in length of the left and right leg. I was also walked through the use of Tensorflow for programming the AI. At the end, I edited both research papers that came out of the research."
-  },
-  {
-    "objectID": "research/dolab.html#documentation",
-    "href": "research/dolab.html#documentation",
-    "title": "Bao Do Lab",
-    "section": "Documentation",
-    "text": "Documentation"
   },
   {
     "objectID": "research/dolab.html#published-papers",
@@ -42,6 +49,20 @@
     "text": "AUV Project\n\n\nJanuary 2023 - May 2023\n\n\nBuilding and designing an autonomous underwater robot to collect data from the ocean.\n\n\n\n\n\nErin Wang\n\n\n\n\n\n\n\n\n\n\n\n\nContract Work\n\n\nAugust 2025 - September 2025\n\n\nContract work to model a Farina Tedt chip with a coordinates verification test.\n\n\n\n\n\nErin Wang\n\n\n\n\n\n\n\n\n\n\n\n\nTrilobio Clinic Project\n\n\nAugust 2024 - December 2025\n\n\nWorking on the consulting team for the lab automation company Trilobio to build a precise analytical scale.\n\n\n\n\n\nErin Wang\n\n\n\n\n\n\n\n\n\n\n\n\nXDemics Clinic Project\n\n\nAugust 2025 - Present\n\n\nWorking as the co-lead of a consulting team for the biotech company XDemics to automate bioreactor manipulation.\n\n\n\n\n\nErin Wang\n\n\n\n\n\n\nNo matching items"
   },
   {
+    "objectID": "personalproj/repo.html",
+    "href": "personalproj/repo.html",
+    "title": "REPO Project",
+    "section": "",
+    "text": "My dream job is to actually work in the animatronic industry designing and building robots for theme park rides. I’m drawn to the combination of art, design, and engineering and the work of replicating biological motion in robotics that animatronics provides. However, there are very limited projects, classes, and clubs at my school to work on robotics and mechatronics. This summer, while doing research in the Biophotonics lab, I met Natalie Ko who is also interested in animatronics. We decided to start a personal project of building our own small animatronic over the summer and the following school year.\nWe decided on building the robot character from the game REPO. We took inspiration from an Instagram creator who builds and programs animatronics and had made a REPO robot with eyes that could move in different directions, arms that flap up and down, and a jaw that opens upon audio recognition. The project seemed feasible to do given the components are 3D printed and the motors are off-the-shelf 180^{o} servo motors."
+  },
+  {
+    "objectID": "personalproj/repo.html#motivation",
+    "href": "personalproj/repo.html#motivation",
+    "title": "REPO Project",
+    "section": "",
+    "text": "My dream job is to actually work in the animatronic industry designing and building robots for theme park rides. I’m drawn to the combination of art, design, and engineering and the work of replicating biological motion in robotics that animatronics provides. However, there are very limited projects, classes, and clubs at my school to work on robotics and mechatronics. This summer, while doing research in the Biophotonics lab, I met Natalie Ko who is also interested in animatronics. We decided to start a personal project of building our own small animatronic over the summer and the following school year.\nWe decided on building the robot character from the game REPO. We took inspiration from an Instagram creator who builds and programs animatronics and had made a REPO robot with eyes that could move in different directions, arms that flap up and down, and a jaw that opens upon audio recognition. The project seemed feasible to do given the components are 3D printed and the motors are off-the-shelf 180^{o} servo motors."
+  },
+  {
     "objectID": "personalproj/repo.html#project-work",
     "href": "personalproj/repo.html#project-work",
     "title": "REPO Project",
@@ -56,18 +77,25 @@
     "text": "Documentation\nAll CAD files and research are saved within an internally shared Google Drive. However, we would like to publish a Github Repo containing CAD files and software programs such that others can follow our project and build their own robot."
   },
   {
-    "objectID": "personalproj/repo.html#patent-information",
-    "href": "personalproj/repo.html#patent-information",
-    "title": "REPO Project",
-    "section": "Patent Information",
-    "text": "Patent Information"
-  },
-  {
     "objectID": "personalproj/repo.html#acknowledgements",
     "href": "personalproj/repo.html#acknowledgements",
     "title": "REPO Project",
     "section": "Acknowledgements",
     "text": "Acknowledgements\nI would like to acknowledge the Makerspace at Harvey Mudd College. This space hosts 3D printers and laser cutters for the students to use. Much of this project could not be realized without access to these resources. And a thanks to Natalie Ko for bringing this project to life with me!"
+  },
+  {
+    "objectID": "academic/xdemics.html",
+    "href": "academic/xdemics.html",
+    "title": "XDemics Clinic Project",
+    "section": "",
+    "text": "XDemics Banner"
+  },
+  {
+    "objectID": "academic/xdemics.html#motivation",
+    "href": "academic/xdemics.html#motivation",
+    "title": "XDemics Clinic Project",
+    "section": "Motivation",
+    "text": "Motivation\nThe clinic project is student-driven with a professor team advisor for technical and management support. The project work includes documentation deliverables as well as a completed prototype. Juniors will stay on the project for a semester while seniors stay on the project for the whole year.\nAs a senior, I am taking clinic for the whole year. The fall semester we focus on defining the project, initial research and ideation, and rapid prototyping whereas in the spring we focus on expanding on one prototype to meet the specs, constraints, and objectives of the project. I am working with the company XDemics whose mission is to automate the manual manipulation of bioreactors in order to increase production and quality of life-saving biologics specifically in the realm of gene therapies. Automation would also reduce waste and probability of contamination during the cell seeding and harvesting procedure. Thus, my clinic team was asked to design a multiaxis robotic system that can rotate, tilt, and agitate the XDemics’ bioreactor and optimize the automated manipulation procedure to maximize cell throughput."
   },
   {
     "objectID": "academic/xdemics.html#project-work",
@@ -82,13 +110,6 @@
     "title": "XDemics Clinic Project",
     "section": "Documentation",
     "text": "Documentation\nDocumentation is one of the major responsibilities for co-leads of the team. I have worked on outlining the projected timeline of the semester and expectations of the project by creating a work breakdown schedule (WBS) and a Gantt Chart as well as in an extensive work plan. Progress is kept with an action items chart complete with progress bars for easy tracking. Each meeting has a corresponding meeting minutes that outlines the next steps and action items for the team as well as for the liaisons. I and my fellow co-lead also setup working documents to track progress and reasonings behind design choices such as a morphological chart for a condensed table of functions and means and a Pugh chart to rank the design alternatives based on their ability to meet an objective as well as the importance of said objective. All progress and justification of designs will also be culminated into a midyear report."
-  },
-  {
-    "objectID": "academic/xdemics.html#patent-information",
-    "href": "academic/xdemics.html#patent-information",
-    "title": "XDemics Clinic Project",
-    "section": "Patent Information",
-    "text": "Patent Information"
   },
   {
     "objectID": "academic/xdemics.html#acknowledgements",
@@ -140,13 +161,6 @@
     "text": "Acknowledgements\nI want to acknowledge my team advisor Professor Mendelson for her advising of the Clinic project. I was taking her Continuum Mechanics class at the same time as the clinic project which aligned well in the teachings and discussions of strain gauges and their behavior under an applied load. I also want to thank my incredible clinic team and clinic team lead for fostering a safe and curious learning environment as well as to the clinic liaisons at Trilobio for being an eager and knowledgable source of feedback. And a special thanks to the coordinators of the clinic class for giving us as undergraduate students the rare opportunity to work on a project provided an overseen by an industry company."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
-  },
-  {
     "objectID": "academic/contract.html",
     "href": "academic/contract.html",
     "title": "Contract Work",
@@ -168,6 +182,20 @@
     "text": "Documentation\nThe deliverables for the contract work included .STEP files of the base chip, the solder bump, and the assembly with the manually placed bumps, a mechanical drawing of both the completed assembly and the individual bump, a coordinate verification system, and a summarized report of the contract work."
   },
   {
+    "objectID": "academic/underwaterrobot.html",
+    "href": "academic/underwaterrobot.html",
+    "title": "AUV Project",
+    "section": "",
+    "text": "In the experimental engineering course (ENGR080) at Harvey Mudd, sophomore engineering students are divided into small teams and tasked to build and design an autonomous underwater robot to collect data from the ocean. The class is a semester long and is split into labs and a final project. The first two-thirds of the class are structured labs that build the skills in designing temperature, pressure, and turbidity sensors. The last third of the lab is deciding within the team a new sensor to design and building the robot to be able to sense temperature, pressure, and whatever the team decided for the third sensor."
+  },
+  {
+    "objectID": "academic/underwaterrobot.html#motivation",
+    "href": "academic/underwaterrobot.html#motivation",
+    "title": "AUV Project",
+    "section": "",
+    "text": "In the experimental engineering course (ENGR080) at Harvey Mudd, sophomore engineering students are divided into small teams and tasked to build and design an autonomous underwater robot to collect data from the ocean. The class is a semester long and is split into labs and a final project. The first two-thirds of the class are structured labs that build the skills in designing temperature, pressure, and turbidity sensors. The last third of the lab is deciding within the team a new sensor to design and building the robot to be able to sense temperature, pressure, and whatever the team decided for the third sensor."
+  },
+  {
     "objectID": "academic/underwaterrobot.html#project-work",
     "href": "academic/underwaterrobot.html#project-work",
     "title": "AUV Project",
@@ -180,13 +208,6 @@
     "title": "AUV Project",
     "section": "Documentation",
     "text": "Documentation\nEach lab required a written lab report detailing the methods and results of the lab (Figure 2 (a)). The end project required a technical proposal to describe the purpose of the new sensor and how the team aims to build the sensor, a technical memo that summarizes all sensor designs on the robot and the final results (Figure 2 (b)), and a presentation of the content in the technical memo.\n\n\n\n\n\n\n\n\n\n\n\n(a) Example of template and description for a Lab Report writeup.\n\n\n\n\n\n\n\n\n\n\n\n(b) Technical memo writeup for our AUV project.\n\n\n\n\n\n\n\nFigure 2: Data for different sweep ranges of the reference mirror stage."
-  },
-  {
-    "objectID": "academic/underwaterrobot.html#acknowledgements",
-    "href": "academic/underwaterrobot.html#acknowledgements",
-    "title": "AUV Project",
-    "section": "Acknowledgements",
-    "text": "Acknowledgements"
   },
   {
     "objectID": "index.html",
@@ -271,61 +292,5 @@
     "title": "Physics of Soft Matter (PoSM) Lab",
     "section": "Acknowledgements",
     "text": "Acknowledgements\nI want to acknowledge my advisor for this research project, Professor Ilton, for the opportunity to work in the PoSM lab. Unfortunately, the research project did not have enough funding to continue after the semester into the summer, but I am so grateful to the guidance of Professor Ilton on my first research project in undergrad."
-  },
-  {
-    "objectID": "academic/xdemics.html",
-    "href": "academic/xdemics.html",
-    "title": "XDemics Clinic Project",
-    "section": "",
-    "text": "XDemics Banner"
-  },
-  {
-    "objectID": "academic/xdemics.html#motivation",
-    "href": "academic/xdemics.html#motivation",
-    "title": "XDemics Clinic Project",
-    "section": "Motivation",
-    "text": "Motivation\nThe clinic project is student-driven with a professor team advisor for technical and management support. The project work includes documentation deliverables as well as a completed prototype. Juniors will stay on the project for a semester while seniors stay on the project for the whole year.\nAs a senior, I am taking clinic for the whole year. The fall semester we focus on defining the project, initial research and ideation, and rapid prototyping whereas in the spring we focus on expanding on one prototype to meet the specs, constraints, and objectives of the project. I am working with the company XDemics whose mission is to automate the manual manipulation of bioreactors in order to increase production and quality of life-saving biologics specifically in the realm of gene therapies. Automation would also reduce waste and probability of contamination during the cell seeding and harvesting procedure. Thus, my clinic team was asked to design a multiaxis robotic system that can rotate, tilt, and agitate the XDemics’ bioreactor and optimize the automated manipulation procedure to maximize cell throughput."
-  },
-  {
-    "objectID": "academic/underwaterrobot.html",
-    "href": "academic/underwaterrobot.html",
-    "title": "AUV Project",
-    "section": "",
-    "text": "In the experimental engineering course (ENGR080) at Harvey Mudd, sophomore engineering students are divided into small teams and tasked to build and design an autonomous underwater robot to collect data from the ocean. The class is a semester long and is split into labs and a final project. The first two-thirds of the class are structured labs that build the skills in designing temperature, pressure, and turbidity sensors. The last third of the lab is deciding within the team a new sensor to design and building the robot to be able to sense temperature, pressure, and whatever the team decided for the third sensor."
-  },
-  {
-    "objectID": "academic/underwaterrobot.html#motivation",
-    "href": "academic/underwaterrobot.html#motivation",
-    "title": "AUV Project",
-    "section": "",
-    "text": "In the experimental engineering course (ENGR080) at Harvey Mudd, sophomore engineering students are divided into small teams and tasked to build and design an autonomous underwater robot to collect data from the ocean. The class is a semester long and is split into labs and a final project. The first two-thirds of the class are structured labs that build the skills in designing temperature, pressure, and turbidity sensors. The last third of the lab is deciding within the team a new sensor to design and building the robot to be able to sense temperature, pressure, and whatever the team decided for the third sensor."
-  },
-  {
-    "objectID": "personalproj/repo.html",
-    "href": "personalproj/repo.html",
-    "title": "REPO Project",
-    "section": "",
-    "text": "My dream job is to actually work in the animatronic industry designing and building robots for theme park rides. I’m drawn to the combination of art, design, and engineering and the work of replicating biological motion in robotics that animatronics provides. However, there are very limited projects, classes, and clubs at my school to work on robotics and mechatronics. This summer, while doing research in the Biophotonics lab, I met Natalie Ko who is also interested in animatronics. We decided to start a personal project of building our own small animatronic over the summer and the following school year.\nWe decided on building the robot character from the game REPO. We took inspiration from an Instagram creator who builds and programs animatronics and had made a REPO robot with eyes that could move in different directions, arms that flap up and down, and a jaw that opens upon audio recognition. The project seemed feasible to do given the components are 3D printed and the motors are off-the-shelf 180^{o} servo motors."
-  },
-  {
-    "objectID": "personalproj/repo.html#motivation",
-    "href": "personalproj/repo.html#motivation",
-    "title": "REPO Project",
-    "section": "",
-    "text": "My dream job is to actually work in the animatronic industry designing and building robots for theme park rides. I’m drawn to the combination of art, design, and engineering and the work of replicating biological motion in robotics that animatronics provides. However, there are very limited projects, classes, and clubs at my school to work on robotics and mechatronics. This summer, while doing research in the Biophotonics lab, I met Natalie Ko who is also interested in animatronics. We decided to start a personal project of building our own small animatronic over the summer and the following school year.\nWe decided on building the robot character from the game REPO. We took inspiration from an Instagram creator who builds and programs animatronics and had made a REPO robot with eyes that could move in different directions, arms that flap up and down, and a jaw that opens upon audio recognition. The project seemed feasible to do given the components are 3D printed and the motors are off-the-shelf 180^{o} servo motors."
-  },
-  {
-    "objectID": "research/dolab.html",
-    "href": "research/dolab.html",
-    "title": "Bao Do Lab",
-    "section": "",
-    "text": "The Do Lab focused on the applications of AI in the medical field, particularly in the use of object detection in reading Xray scans. The project that I was on involved training two neural networks: one to determine scoliosis measurements given a spine Xray and one to determine leg length differences given a lower body Xray."
-  },
-  {
-    "objectID": "research/dolab.html#motivation",
-    "href": "research/dolab.html#motivation",
-    "title": "Bao Do Lab",
-    "section": "",
-    "text": "The Do Lab focused on the applications of AI in the medical field, particularly in the use of object detection in reading Xray scans. The project that I was on involved training two neural networks: one to determine scoliosis measurements given a spine Xray and one to determine leg length differences given a lower body Xray."
   }
 ]
