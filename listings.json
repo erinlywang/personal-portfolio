@@ -1,0 +1,25 @@
+[
+  {
+    "listing": "/research.html",
+    "items": [
+      "/research/dolab.html",
+      "/research/posm.html",
+      "/research/biopho.html"
+    ]
+  },
+  {
+    "listing": "/projects.html",
+    "items": [
+      "/academic/underwaterrobot.html",
+      "/academic/contract.html",
+      "/academic/trilobio.html",
+      "/academic/xdemics.html"
+    ]
+  },
+  {
+    "listing": "/personalproj.html",
+    "items": [
+      "/personalproj/repo.html"
+    ]
+  }
+]

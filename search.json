@@ -1,0 +1,296 @@
+[
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research Projects",
+    "section": "",
+    "text": "Bao Do Lab\n\n\nJuly 2021 - July 2022\n\n\nResearch in computer vision-based radiology diagnosis through developing training and testing datasets.\n\n\n\n\n\nErin Wang\n\n\n\n\n\n\n\n\n\n\n\n\nPhysics of Soft Matter (PoSM) Lab\n\n\nJanuary 2024 - May 2024\n\n\nResearch on the Slingshot Spider project in designing an energy-efficient slingshot robot.\n\n\n\n\n\nErin Wang\n\n\n\n\n\n\n\n\n\n\n\n\nBiophotonics Lab\n\n\nMay 2024 - Present\n\n\nResearch on the Monitoring the Rhizosphere Project to map root systems using low-coherence interferometry.\n\n\n\n\n\nErin Wang\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "research/dolab.html",
+    "href": "research/dolab.html",
+    "title": "Bao Do Lab",
+    "section": "",
+    "text": "The Do Lab focused on the applications of AI in the medical field, particularly in the use of object detection in reading Xray scans. The project that I was on involved training two neural networks: one to determine scoliosis measurements given a spine Xray and one to determine leg length differences given a lower body Xray."
+  },
+  {
+    "objectID": "research/dolab.html#motivation",
+    "href": "research/dolab.html#motivation",
+    "title": "Bao Do Lab",
+    "section": "",
+    "text": "The Do Lab focused on the applications of AI in the medical field, particularly in the use of object detection in reading Xray scans. The project that I was on involved training two neural networks: one to determine scoliosis measurements given a spine Xray and one to determine leg length differences given a lower body Xray."
+  },
+  {
+    "objectID": "research/dolab.html#research-work",
+    "href": "research/dolab.html#research-work",
+    "title": "Bao Do Lab",
+    "section": "Research Work",
+    "text": "Research Work\nMy work on the project involved preparing datasets for training and testing the AI. I annotated a large set of spine Xrays and lower body Xrays, boxing the thoracic versus lumbar vertebrae and calculating the cobb angle of the spine or the difference in length of the left and right leg. I was also walked through the use of Tensorflow for programming the AI. At the end, I edited both research papers that came out of the research."
+  },
+  {
+    "objectID": "research/dolab.html#published-papers",
+    "href": "research/dolab.html#published-papers",
+    "title": "Bao Do Lab",
+    "section": "Published Papers",
+    "text": "Published Papers\nHa, AY., Do, BH, Bartret, AL, Fang, CX, Hsiao, A., Lutz, AM, Banerjee, I., Riley, GM., Rubin, DL., Stevens, KJ, Wang, E., Wang, W., Beaulieu, CF., Hurt, B. Automating scoliosis measurements in radiographic studies with machine learning: Comparing artificial intelligence and clinical reports. Journal of Digital Imaging, 2022 February; 35: 524-533.\nLarson, N., Nguyen, C., Do, B., Kaul, A., Larson, A., Wang, S., Wang, E., Bultman, E., Stevens, K., Pai, J., Ha, A., Boutin, R., Fredericson, M., Do, L., Fang, C. Artificial intelligence system for automatic quantitative analysis and radiology reporting of x-ray leg exams. Journal of Digital Imaging 2022 July; 35: 1494-1505."
+  },
+  {
+    "objectID": "research/dolab.html#acknowledgements",
+    "href": "research/dolab.html#acknowledgements",
+    "title": "Bao Do Lab",
+    "section": "Acknowledgements",
+    "text": "Acknowledgements\nI want to acknowledge my advisor on this research, Dr. Bao Do, for the opportunity to join a research project in high school and have the experience of editing a research paper. I learned a lot about research documentation and workflow from being on this research project."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Academic Projects and Contract Work",
+    "section": "",
+    "text": "AUV Project\n\n\nJanuary 2023 - May 2023\n\n\nBuilding and designing an autonomous underwater robot to collect data from the ocean.\n\n\n\n\n\nErin Wang\n\n\n\n\n\n\n\n\n\n\n\n\nContract Work\n\n\nAugust 2025 - September 2025\n\n\nContract work to model a Farina Tedt chip with a coordinates verification test.\n\n\n\n\n\nErin Wang\n\n\n\n\n\n\n\n\n\n\n\n\nTrilobio Clinic Project\n\n\nAugust 2024 - December 2025\n\n\nWorking on the consulting team for the lab automation company Trilobio to build a precise analytical scale.\n\n\n\n\n\nErin Wang\n\n\n\n\n\n\n\n\n\n\n\n\nXDemics Clinic Project\n\n\nAugust 2025 - Present\n\n\nWorking as the co-lead of a consulting team for the biotech company XDemics to automate bioreactor manipulation.\n\n\n\n\n\nErin Wang\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "personalproj/repo.html",
+    "href": "personalproj/repo.html",
+    "title": "REPO Project",
+    "section": "",
+    "text": "My dream job is to actually work in the animatronic industry designing and building robots for theme park rides. I’m drawn to the combination of art, design, and engineering and the work of replicating biological motion in robotics that animatronics provides. However, there are very limited projects, classes, and clubs at my school to work on robotics and mechatronics. This summer, while doing research in the Biophotonics lab, I met Natalie Ko who is also interested in animatronics. We decided to start a personal project of building our own small animatronic over the summer and the following school year.\nWe decided on building the robot character from the game REPO. We took inspiration from an Instagram creator who builds and programs animatronics and had made a REPO robot with eyes that could move in different directions, arms that flap up and down, and a jaw that opens upon audio recognition. The project seemed feasible to do given the components are 3D printed and the motors are off-the-shelf 180^{o} servo motors."
+  },
+  {
+    "objectID": "personalproj/repo.html#motivation",
+    "href": "personalproj/repo.html#motivation",
+    "title": "REPO Project",
+    "section": "",
+    "text": "My dream job is to actually work in the animatronic industry designing and building robots for theme park rides. I’m drawn to the combination of art, design, and engineering and the work of replicating biological motion in robotics that animatronics provides. However, there are very limited projects, classes, and clubs at my school to work on robotics and mechatronics. This summer, while doing research in the Biophotonics lab, I met Natalie Ko who is also interested in animatronics. We decided to start a personal project of building our own small animatronic over the summer and the following school year.\nWe decided on building the robot character from the game REPO. We took inspiration from an Instagram creator who builds and programs animatronics and had made a REPO robot with eyes that could move in different directions, arms that flap up and down, and a jaw that opens upon audio recognition. The project seemed feasible to do given the components are 3D printed and the motors are off-the-shelf 180^{o} servo motors."
+  },
+  {
+    "objectID": "personalproj/repo.html#project-work",
+    "href": "personalproj/repo.html#project-work",
+    "title": "REPO Project",
+    "section": "Project Work",
+    "text": "Project Work\nOver the summer we focused on building the eye mechanism as we believed the eyes would likely be one of the most difficult parts of the design. ### Eye Prototype 1: The Swing Grabbing inspiration from a Youtube video on building animatronic eyes, we first started with an eye prototype that incorporated individual horizontal motion but shared vertical motion. The design required three servos, two servos for the horizontal movement of each eye, and then one servo to control the vertical movement through a swing that the both eyes sit on (Figure 1).\n\n\n\n\n\n\nFigure 1: First eye prototype with two servos to control the horizontal motion of each eye. The image shows the prototype’s ability to perform “cross-eye” motion. However, the prototype’s “outward-eye” motion was much more limited than desired.\n\n\n\nThe biggest challenge we ran into with this prototype was the length of the horizontal arm that attached to the eye as the length allowed for a greater degree of movement in one horizontal direction and not the other. The complexity of the swing and its placement would also further affect the flexibility of movement of the horizontal servos. So instead we decided to forego the swing prototype and try controlling each eye individually.\n\nEye Prototype 2: Four Motor Socket\nThis prototype gets its name from using four servo motors to control both eyes (two for each eye) such that each eye is able to move independently as well as the ball-socket rods that were used to allow for the eye to rotate without translating from its position (Figure 2).\n\n\n\n\n\n\nFigure 2: Second eye prototype with four servos: one for horizontal motion and one for vertical motion of an individual eye. The image shows the prototype’s attachment system to the eye itself and to the base that would attach to the head of the robot.\n\n\n\nThe biggest challenge we ran into with this prototype was figuring out the right eye size to allow large movement but still stay true to the robot’s character design as well as the length of the rods connecting the servo and the ball/joint attached to the eye. However, this prototype was succesful! It provided a desirable motion range without translating meaning the eye will move around without getting stuck on the eye sockets of the robot’s head.\n\n\nCurrent and Future Direction\nWe are currently making slow progress due to classes being in session. But our next steps are to design the jaw mechanism that rotates the head of the robot up around a hinge and separates the head from the bottom body to look like a the in-game character when its mouth is agape (Figure 3).\n\n\n\n\n\n\nFigure 3: REPO Robot character in-game opening its jaw.\n\n\n\nFuture work will include designing the electrical components such as the microphone to intake audio and open the jaw accordingly as well as programming the arduino code to move the eyes in a random or set pathway."
+  },
+  {
+    "objectID": "personalproj/repo.html#documentation",
+    "href": "personalproj/repo.html#documentation",
+    "title": "REPO Project",
+    "section": "Documentation",
+    "text": "Documentation\nAll CAD files and research are saved within an internally shared Google Drive. However, we would like to publish a Github Repo containing CAD files and software programs such that others can follow our project and build their own robot."
+  },
+  {
+    "objectID": "personalproj/repo.html#acknowledgements",
+    "href": "personalproj/repo.html#acknowledgements",
+    "title": "REPO Project",
+    "section": "Acknowledgements",
+    "text": "Acknowledgements\nI would like to acknowledge the Makerspace at Harvey Mudd College. This space hosts 3D printers and laser cutters for the students to use. Much of this project could not be realized without access to these resources. And a thanks to Natalie Ko for bringing this project to life with me!"
+  },
+  {
+    "objectID": "academic/xdemics.html",
+    "href": "academic/xdemics.html",
+    "title": "XDemics Clinic Project",
+    "section": "",
+    "text": "XDemics Banner"
+  },
+  {
+    "objectID": "academic/xdemics.html#motivation",
+    "href": "academic/xdemics.html#motivation",
+    "title": "XDemics Clinic Project",
+    "section": "Motivation",
+    "text": "Motivation\nThe clinic project is student-driven with a professor team advisor for technical and management support. The project work includes documentation deliverables as well as a completed prototype. Juniors will stay on the project for a semester while seniors stay on the project for the whole year.\nAs a senior, I am taking clinic for the whole year. The fall semester we focus on defining the project, initial research and ideation, and rapid prototyping whereas in the spring we focus on expanding on one prototype to meet the specs, constraints, and objectives of the project. I am working with the company XDemics whose mission is to automate the manual manipulation of bioreactors in order to increase production and quality of life-saving biologics specifically in the realm of gene therapies. Automation would also reduce waste and probability of contamination during the cell seeding and harvesting procedure. Thus, my clinic team was asked to design a multiaxis robotic system that can rotate, tilt, and agitate the XDemics’ bioreactor and optimize the automated manipulation procedure to maximize cell throughput."
+  },
+  {
+    "objectID": "academic/xdemics.html#project-work",
+    "href": "academic/xdemics.html#project-work",
+    "title": "XDemics Clinic Project",
+    "section": "Project Work",
+    "text": "Project Work\nAs a co-lead for my clinic team, I have been able to experience much more of the management side of clinic including scheduling and planning meeting agendas for internal team meetings and external meetings with our team advisor and liaisons, outlining timelines for the projects with set dates for submitting documentation and prototype deliverables, organizing the budget between discretionary, travel, and equipment, leading communication between the team and the liaisons, and overall directing the flow of work and communication such that the team has both an educational and a fun clinic experience.\nCurrently, my team has finished scoping out the project with redefining the project statement and solidifying the project’s objectives, specifications, constraints, and deliverables in accordance with the liaisons. We have also completed a thorough work plan including a literature review of relevant theory and pre-exisiting methods and a technical approach for this upcoming semester’s tasks. We are in the process of ideating design alternatives and converging on one prototype to continue building upon. We will be visiting the XDemics work site to aid in clarifying the necessary movements and possible constraints of our robotic system. The goal by the end of the year is to design a high fidelity prototype of a robotic system that can successfully manipulate the bioreactor with equal or greater cell throughput than the current manual process.\nEvery week we also meet with other teams in a Design Review session where one team will get to share their progress on the project as well as receive feedback on challenges or designs from the other teams. Our goal with design reviews is to engage the other teams in such a way that we can gather as much feedback and ideas as possible."
+  },
+  {
+    "objectID": "academic/xdemics.html#documentation",
+    "href": "academic/xdemics.html#documentation",
+    "title": "XDemics Clinic Project",
+    "section": "Documentation",
+    "text": "Documentation\nDocumentation is one of the major responsibilities for co-leads of the team. I have worked on outlining the projected timeline of the semester and expectations of the project by creating a work breakdown schedule (WBS) and a Gantt Chart as well as in an extensive work plan. Progress is kept with an action items chart complete with progress bars for easy tracking. Each meeting has a corresponding meeting minutes that outlines the next steps and action items for the team as well as for the liaisons. I and my fellow co-lead also setup working documents to track progress and reasonings behind design choices such as a morphological chart for a condensed table of functions and means and a Pugh chart to rank the design alternatives based on their ability to meet an objective as well as the importance of said objective. All progress and justification of designs will also be culminated into a midyear report."
+  },
+  {
+    "objectID": "academic/xdemics.html#acknowledgements",
+    "href": "academic/xdemics.html#acknowledgements",
+    "title": "XDemics Clinic Project",
+    "section": "Acknowledgements",
+    "text": "Acknowledgements\nI want to acknowledge my team advisor Professor Angie Lee for her advising of the Clinic project. She has given wise advice and gently guided the team without managing the project. I also want to thank my clinic team and team co-lead for approaching clinic with curiosity and enthusiasm as well as to the clinic liaisons at Trilobio for their effective communication and eager support. And a special thanks to the coordinators of the clinic class for giving us as undergraduate students the rare opportunity to work on a project provided an overseen by an industry company."
+  },
+  {
+    "objectID": "academic/trilobio.html",
+    "href": "academic/trilobio.html",
+    "title": "Trilobio Clinic Project",
+    "section": "",
+    "text": "Trilobio banner"
+  },
+  {
+    "objectID": "academic/trilobio.html#motivation",
+    "href": "academic/trilobio.html#motivation",
+    "title": "Trilobio Clinic Project",
+    "section": "Motivation",
+    "text": "Motivation\nClinic is a class at Harvey Mudd that connects students to companies in industry. Students are split into teams and assigned to a company that will then provide a project for the students to engineer. The clinic project is student-driven with a professor team advisor for technical and management support. The project work includes documentation deliverables as well as a completed prototype. Juniors will stay on the project for a semester while seniors stay on the project for the whole year.\nAs a junior, I took clinic in the fall semester when the teams focus on defining the project, initial research and ideation, and rapid prototyping. I worked with the company Trilobio whose mission is to automate manual biology lab processes (e.g. pipetting) in order to increase biologists’ bandwidth for designing, executing, and managing research. The problem Trilobio was facing was calibrating and verifying the pipette system especially with fluids of different viscosities. Thus, my clinic team was asked to design an analytical balance that could provide a high resolution measurement of the pipetted mass for an 8-Channel pipette system."
+  },
+  {
+    "objectID": "academic/trilobio.html#patent-information",
+    "href": "academic/trilobio.html#patent-information",
+    "title": "Trilobio Clinic Project",
+    "section": "Patent Information",
+    "text": "Patent Information\nThe company is currently filing for a patent surrounding the work we provided. AS such, information on the project work is limited."
+  },
+  {
+    "objectID": "academic/trilobio.html#project-work",
+    "href": "academic/trilobio.html#project-work",
+    "title": "Trilobio Clinic Project",
+    "section": "Project Work",
+    "text": "Project Work\nWhile on the Trilobio project, I worked mainly on designing the electrical system for a strain gauge balance prototype. I designed an initial breadboarded circuit to read the strain as a voltage that was then moved to a soldered protoboard for more stability and durability as well as for easier transportation. The electrical design also included interfacing the circuit with an Analog-to-Digital Converter (ADC) to read and process the voltages and convert the voltage back to strain.\nThe project opened many avenues of learning from big technical skills like communicating to a microcontroller and analyzing noise sources to small skills like how to familiarize myself with an instrument’s datasheet. This project was also the first time I was encountaring hexadecimal instead of binary. The learning curve in this project was extremely large with much of the project training skills of finding information and answers with little professional guidance."
+  },
+  {
+    "objectID": "academic/trilobio.html#documentation",
+    "href": "academic/trilobio.html#documentation",
+    "title": "Trilobio Clinic Project",
+    "section": "Documentation",
+    "text": "Documentation\nAs clinic is stil a Harvey Mudd class, there were required assignments for documentation and deliverables. During the project, my team and I developed a team charter to outline the project and expectations of team dynamics, a work plan to strategize how to approach the project, and a midyear report to communicate our results for the semester and justifications for design choices. On top of internal documentation deliverables, I kept a notebook for daily progress and work on my assigned design alternative. The notebook came in handy when having to delineate the advantages and pitfalls of the strain gauge prototype and ultimately why the prototype could not meet sensitivity requirements."
+  },
+  {
+    "objectID": "academic/trilobio.html#acknowledgements",
+    "href": "academic/trilobio.html#acknowledgements",
+    "title": "Trilobio Clinic Project",
+    "section": "Acknowledgements",
+    "text": "Acknowledgements\nI want to acknowledge my team advisor Professor Mendelson for her advising of the Clinic project. I was taking her Continuum Mechanics class at the same time as the clinic project which aligned well in the teachings and discussions of strain gauges and their behavior under an applied load. I also want to thank my incredible clinic team and clinic team lead for fostering a safe and curious learning environment as well as to the clinic liaisons at Trilobio for being an eager and knowledgable source of feedback. And a special thanks to the coordinators of the clinic class for giving us as undergraduate students the rare opportunity to work on a project provided an overseen by an industry company."
+  },
+  {
+    "objectID": "academic/contract.html",
+    "href": "academic/contract.html",
+    "title": "Contract Work",
+    "section": "",
+    "text": "I was asked to create a 3D CAD model for a Farina Tedt chip and a system for verifying the coordinates of the soldering bumps on the chip match the provided coordinates.\nI used SolidWorks to create the CAD file with manual placement of the bumps. I programmed the SolidWorks API to output the coordinates of the bumps then setup the csv file to check the output coordinates against the given coordinates with easy detection of mismatched coordinates."
+  },
+  {
+    "objectID": "academic/contract.html#project-work",
+    "href": "academic/contract.html#project-work",
+    "title": "Contract Work",
+    "section": "",
+    "text": "I was asked to create a 3D CAD model for a Farina Tedt chip and a system for verifying the coordinates of the soldering bumps on the chip match the provided coordinates.\nI used SolidWorks to create the CAD file with manual placement of the bumps. I programmed the SolidWorks API to output the coordinates of the bumps then setup the csv file to check the output coordinates against the given coordinates with easy detection of mismatched coordinates."
+  },
+  {
+    "objectID": "academic/contract.html#documentation",
+    "href": "academic/contract.html#documentation",
+    "title": "Contract Work",
+    "section": "Documentation",
+    "text": "Documentation\nThe deliverables for the contract work included .STEP files of the base chip, the solder bump, and the assembly with the manually placed bumps, a mechanical drawing of both the completed assembly and the individual bump, a coordinate verification system, and a summarized report of the contract work."
+  },
+  {
+    "objectID": "academic/underwaterrobot.html",
+    "href": "academic/underwaterrobot.html",
+    "title": "AUV Project",
+    "section": "",
+    "text": "In the experimental engineering course (ENGR080) at Harvey Mudd, sophomore engineering students are divided into small teams and tasked to build and design an autonomous underwater robot to collect data from the ocean. The class is a semester long and is split into labs and a final project. The first two-thirds of the class are structured labs that build the skills in designing temperature, pressure, and turbidity sensors. The last third of the lab is deciding within the team a new sensor to design and building the robot to be able to sense temperature, pressure, and whatever the team decided for the third sensor."
+  },
+  {
+    "objectID": "academic/underwaterrobot.html#motivation",
+    "href": "academic/underwaterrobot.html#motivation",
+    "title": "AUV Project",
+    "section": "",
+    "text": "In the experimental engineering course (ENGR080) at Harvey Mudd, sophomore engineering students are divided into small teams and tasked to build and design an autonomous underwater robot to collect data from the ocean. The class is a semester long and is split into labs and a final project. The first two-thirds of the class are structured labs that build the skills in designing temperature, pressure, and turbidity sensors. The last third of the lab is deciding within the team a new sensor to design and building the robot to be able to sense temperature, pressure, and whatever the team decided for the third sensor."
+  },
+  {
+    "objectID": "academic/underwaterrobot.html#project-work",
+    "href": "academic/underwaterrobot.html#project-work",
+    "title": "AUV Project",
+    "section": "Project Work",
+    "text": "Project Work\nI worked mainly on building the electrical components of the sensors, specifically the temperature and a modified turbidity sensor (Figure 2 (a)). I developed skills in designing circuit schematics, soldering circuits onto protoboards, and testing circuit functionality with oscilloscopes and multimeters (Figure 2 (b)). I worked mainly with thermistors, diodes, and op-amps in the circuit design.\n\n\n\n\n\n\n\n\n\n\n\n(a) Design of temperature sensor circuit with Desmos simulations for temperature range calculations.\n\n\n\n\n\n\n\n\n\n\n\n(b) Breadboarded transimpedance amplifiers as well as diode drivers for the modified turbidity sensor.\n\n\n\n\n\n\n\nFigure 1"
+  },
+  {
+    "objectID": "academic/underwaterrobot.html#documentation",
+    "href": "academic/underwaterrobot.html#documentation",
+    "title": "AUV Project",
+    "section": "Documentation",
+    "text": "Documentation\nEach lab required a written lab report detailing the methods and results of the lab (Figure 2 (a)). The end project required a technical proposal to describe the purpose of the new sensor and how the team aims to build the sensor, a technical memo that summarizes all sensor designs on the robot and the final results (Figure 2 (b)), and a presentation of the content in the technical memo.\n\n\n\n\n\n\n\n\n\n\n\n(a) Example of template and description for a Lab Report writeup.\n\n\n\n\n\n\n\n\n\n\n\n(b) Technical memo writeup for our AUV project.\n\n\n\n\n\n\n\nFigure 2: Data for different sweep ranges of the reference mirror stage."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Erin Wang Portfolio",
+    "section": "",
+    "text": "Erin Wang is a senior engineering major at Harvey Mudd College. Her interests are in robotics and mechatronics specifically for building animatronics in theme parks. One of her personal projects is to build the robot from the REPO game with 3D printed material and off-the-shelf servo motors. The link to her Github can be found here.\nAfter college, she aims to apply for Masters programs robotics, electrical engineering, or mechanical engineering. When she is not working hard in her classes, music and food fill her life. She loves to dance and sing as well as compose music, and she is always willing to try a new food place."
+  },
+  {
+    "objectID": "personalproj.html",
+    "href": "personalproj.html",
+    "title": "Personal Projects",
+    "section": "",
+    "text": "REPO Project\n\n\nMay 2025 - Present\n\n\nBuilding an animatronic designed after the main robot from the REPO game\n\n\n\n\n\nErin Wang\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "research/biopho.html",
+    "href": "research/biopho.html",
+    "title": "Biophotonics Lab",
+    "section": "",
+    "text": "The Biophotonics Lab at Harvey Mudd College focuses on building optical tools for applications in biomedicine and agriculture.\n\n\n\n\n\n\nFigure 1: Proposed system of the optical tool to evaluate plant health that would measure light backscatter from the roots of a plant sample.\n\n\n\nThe Rhizosphere project is working on designing an optical tool that can non-invasively map out root systems and possibly characterize root health using the light-piping properties of plant stems (Figure 1). The project’s scope revolves around evaluating the ability of low coherence interferometry in producing depth scans of the Arabidopsis Thaliana root in situ."
+  },
+  {
+    "objectID": "research/biopho.html#motivation",
+    "href": "research/biopho.html#motivation",
+    "title": "Biophotonics Lab",
+    "section": "",
+    "text": "The Biophotonics Lab at Harvey Mudd College focuses on building optical tools for applications in biomedicine and agriculture.\n\n\n\n\n\n\nFigure 1: Proposed system of the optical tool to evaluate plant health that would measure light backscatter from the roots of a plant sample.\n\n\n\nThe Rhizosphere project is working on designing an optical tool that can non-invasively map out root systems and possibly characterize root health using the light-piping properties of plant stems (Figure 1). The project’s scope revolves around evaluating the ability of low coherence interferometry in producing depth scans of the Arabidopsis Thaliana root in situ."
+  },
+  {
+    "objectID": "research/biopho.html#research-work",
+    "href": "research/biopho.html#research-work",
+    "title": "Biophotonics Lab",
+    "section": "Research Work",
+    "text": "Research Work\nMy role on the Rhizosphere project mainly involves designing, building, aligning, and testing the optical systems including automating data collection. My inital work on the project (2024) was to build a system that could image a mung bean stem and measure light transmission through the stem. With my lab partner, Audrey Gruian, I constructed a USB camera microscope that magnified the mung bean stem enough to visualize the stem’s hollow center. We were able to take images of the mung bean stem using this apparatus.\nI then worked on a mung bean “cage” setup to measure light transmission through the stem by feeding red He-Ne laser light into the stem by way of an optical fiber and capturing the transmitted light with a photodetector (Figure 2). Through this setup, we were able to measure changes in transmission across mung beans of different length as well as visualize the drop off of transmission as the stem wilts.\n\n\n\n\n\n\nFigure 2: Setup of transmission measurement with the He-Ne laser being fed by fiber into the mung bean plant and captured by a Si Photodetector.\n\n\n\nThis past summer (2025), I worked with Grey Seymour on moving towards measuring backscatter rather than transmission and towards using Arabidopsis Thaliana instead of mung beans for its applicability to a wide range of flowering plants. I first started by building an interferometer with an electrical optical modulator (EOM) to manipulate the phase of the reference wave. I wrote a Python program using the nidaqmx package to capture the data from our data acquistion device and fit the curve to the expected sinusoidal interference equation.\nHowever, due to the sensitivity of our system to miniscule changes in the environment (e.g. slight table movement, activity from the other lab members, etc.), the wide variability of the results proved inconclusive in verifying the EOM interferometry setup. We decided to move towards a low coherence interferometer (LCI) setup to preserve a high resolution in measurements while limiting the sensitivity to environmental variables (Figure 3 (a) and Figure 3 (b)).\n\n\n\n\n\n\n\n\n\n\n\n(a) A drawing of the Low Coherence Interferometer (LCI) setup with an 850 nm super luminescent diode (SLD) feeding into a polarizer, then split 50:50 by a 2x2 coupler into a sample and reference beam that when reflected recombine into the photodiode (PD). The signal is then fed into a photodiode amplifier (PA), read by the data acquistion device (NiDAQ), and saved on the computer through code.\n\n\n\n\n\n\n\n\n\n\n\n(b) A labeled picture of the physical in-lab LCI setup. The sample in this setup is a TIR retroreflection with an AR coating for 350-700 nm.\n\n\n\n\n\n\n\nFigure 3\n\n\n\nTowards the end of the summer, I wrote a Python script on Colab to simulate and understand the expected interference pattern and coherence length of a monochrome (single wavelength) source versus a broadband source. Then, I designed, built, and aligned an LCI interferometer with a near-infrared super luminescent diode as its broadband source. The end of the summer was the beginning of attempting to verify the LCI setup using a TIR retroreflector as the sample. I wrote a program incorporating the nidaqmx and pylablib packages to automate collecting data while moving the reference mirror stage (see code block below).\n\n\nCode: My non-executable code\n\n\n\nLCISweepCONTINUOUS.py\n\nfrom pylablib.devices import Thorlabs\nimport nidaqmx\nfrom nidaqmx.constants import TerminalConfiguration, AcquisitionType, READ_ALL_AVAILABLE\nimport matplotlib.pyplot as plt\nimport csv\nimport numpy as np\nimport os\nimport time\nfrom datetime import datetime\nfrom scipy.fft import fft, fftfreq\nfrom scipy.optimize import curve_fit\n\ndef create_folder(folder_name):\n    try:\n        os.mkdir(folder_name)\n        print(f\"Folder '{folder_name}' created successfully.\")\n    except FileExistsError:\n        print(f\"Folder '{folder_name}' already exists.\")\n    except Exception as e:\n        print(f\"An error occurred: {e}\")\n\ndef move_to_folder(folder_name):\n    try:\n        os.chdir(folder_name)\n        print(f\"Current directory changed to: {os.getcwd()}\")\n    except FileNotFoundError:\n        print(f\"Folder '{folder_name}' not found.\")\n    except NotADirectoryError:\n        print(f\"'{folder_name}' is not a directory.\")\n    except Exception as e:\n        print(f\"An error occurred: {e}\")\n\ndef create_csv_file(filename, fields, datarows):\n    with open(filename, 'w') as csvfile:\n        # create csv writer object\n        csvwriter = csv.writer(csvfile, lineterminator='\\n')\n\n        # writing the fields\n        csvwriter.writerow(fields)\n\n        # writing the data rows\n        csvwriter.writerows(datarows)\n\ndef take_data():\n    with nidaqmx.Task() as task:\n        task.ai_channels.add_ai_voltage_chan(\"Dev1/ai1\", \n                                            max_val=10, \n                                            terminal_config= TerminalConfiguration.RSE)\n\n        task.timing.cfg_samp_clk_timing(1000000, \n                                        sample_mode=AcquisitionType.FINITE, \n                                        samps_per_chan=1000)\n        rawdata = task.read(READ_ALL_AVAILABLE)\n    return rawdata\n\ndef find_amp(data):\n    sorted_data = sorted(data)\n\n    # calculate minimum average of bottom 100 values\n    averagemin = np.mean(sorted_data[0:99])\n\n    # calculate maximum average of top 100 values\n    averagemax = np.mean(sorted_data[len(sorted_data)-100:len(sorted_data)])\n\n    # calculate amplitude\n    amplitude = averagemax - averagemin\n    return amplitude\n\ndef find_average(matrix):\n    # Calculate the average of each row\n    averages = np.mean(matrix, axis=1)\n    avg_amplitudes = list(map(float, averages))\n    return avg_amplitudes\n\ndef find_std(matrix):\n    # Calculate the standard deviation of each row\n    std_devs = np.std(matrix, axis=1)\n    std_amplitudes = list(map(float, std_devs))\n    return std_amplitudes\n\ndef get_serial(value):\n    devices = Thorlabs.list_kinesis_devices()\n    device_tuple = devices[value]\n    serial = device_tuple[0]\n    return serial\n\ndef get_devices():\n    print(Thorlabs.list_kinesis_devices())\n\n## Define class for Kinesis stage\n\nclass KinesisStage(Thorlabs.KinesisPiezoMotor):\n    def __init__(self, serial):\n        super().__init__(serial)\n\n    def set_def_channel(self, value):\n        self.set_default_channel(value)\n        print(\" Default channel:\", value)\n\n    def move_forward(self, value):\n        self.move_by(value)\n        time.sleep(4)\n        print(\"Stage moved forward by \" + str(value) + \".\")\n        position = self.get_position()\n        print(\"Current Position: \", position)\n\n    def move_back(self, value):\n        self.move_by(-value)\n        time.sleep(4)\n        print(\"Stage moved backward by \" + str((-value)) + \".\")\n        position = self.get_position()\n        print(\"Current Position: \", position)\n\n    def zero_position(self):\n        self.move_to(0)\n        time.sleep(4)\n        print(\"Stage position set to 0.\")\n        position = self.get_position()\n        print(\"Current Position: \", position)\n\n\n# Get serial number of motor\nserial = get_serial(0)\n\n# Make stage object to move stage\nstage = KinesisStage(serial)\nstage.set_def_channel(2)\n\n# Set up how many test and trials and date\ntestnum = 1\ntrialnum = 1\ndate = datetime.now().strftime(\"%m-%d-%y\")\n\ntest_folder = \"Test \" + str(testnum)\n\ncreate_folder(test_folder)\nmove_to_folder(test_folder)\n\n# Set up initial parameters for collecting sweep data\nsample_rate = 1000000  # Sample rate in Hz\nsample_count = 1000  # Number of samples to collect\n\n# setup lists to store data for each input voltage\ntrial_var = {}\nN_x = 100\nstart_pos = 5000000\nend_pos = start_pos-100000-N_x\nx = np.arange(start_pos, end_pos, -N_x) \n\n# Set the stage to the initial point\nstage.move_to(start_pos)\n\n\n# setup lists to store fields for csv files\ntest_fields = ['x position']\nfor number in range(1, trialnum+1):\n    test_fields.append(f'Trial {number}')\n\ntest_data = list(x)\n\ncurrent_position = stage.get_position()\n\ntrial_data = []\n    \nwith nidaqmx.Task() as task:\n    task.ai_channels.add_ai_voltage_chan(\"Dev1/ai1\", \n                                        max_val=10, \n                                        terminal_config= TerminalConfiguration.RSE)\n\n    task.timing.cfg_samp_clk_timing(1000000, \n                                    sample_mode=AcquisitionType.CONTINUOUS, \n                                    samps_per_chan=50000)\n    \n    task.start()\n    print('Task started.    Data acquiring...')\n    while current_position &gt; end_pos:\n        stage.jog('-')\n        rawdata = task.read(number_of_samples_per_channel=100)\n        rawdata_avg = np.average(rawdata)\n        trial_data.append(rawdata_avg)\n    task.stop()\n    print('Task stopped.')\n\n\n# time.sleep(0.5)\n\n# rawdata = take_data()\n\n\n\ntest_data = np.vstack([test_data, trial_data])\nstage.stop()\n\n# Create a csv file with the position and all the trial data\ntestfilename = date + '_ALLTRIALSLCISweep_Test' + str(testnum) + '.csv'\ntest_datarows = np.transpose(test_data)\ncreate_csv_file(testfilename, test_fields, test_datarows)\n\n## Find average of all trials\n\ntest_data_nox = test_datarows[:,1:]         # removes x position column\naverages = find_average(test_data_nox)\nstd_devs = find_std(test_data_nox)\navg_test_data = np.transpose(np.vstack([list(x),averages,std_devs]))\n\navgdatafields = ['x position', 'Average Vout [V]', 'Standard Dev [V]']\navgdataname = date + '_AveragedLCISweep_Test' + str(testnum) \navgdatafilename = avgdataname + '.csv'\ncreate_csv_file(avgdatafilename, avgdatafields, avg_test_data)\n\n# save plot of data for each trial and vin\nplt.figure()\nplt.errorbar(list(x), averages, yerr=std_devs, fmt='o')\nplt.xlabel(\"x position\")\nplt.ylabel('Voltage [V]')\nplt.title(\"Test \" + str(testnum) + \": LCI Sweep Data\")\nplt.savefig(avgdataname +'.png')\n# plt.show(block=True)\n\nos.chdir('..')        \n\n\nWe are currently still working on taking this verification data due to challenges with capturing the whole range of the reference mirror stage. We hope to finish verifying the LCI setup and move to implementing the Arabidopsis stem to present for the SPIE conference in the Spring."
+  },
+  {
+    "objectID": "research/biopho.html#documentation",
+    "href": "research/biopho.html#documentation",
+    "title": "Biophotonics Lab",
+    "section": "Documentation",
+    "text": "Documentation\nDaily lab notebooks were kept on Confluence along with a weekly summary and all lab notebooks linked on a parent page. Each lab notebook contained a checklist of action items for the day, a section for what was completed that day/where we were stuck/what action items were planned for the next day, and a section for detailed documentation of our work that day (Figure 4). Weekly summaries included what was achieved that week and what goals we were setting for the next week. I learned greatly in this lab how important documentation can be especially when reproducing lab setups and revisiting results. I also worked with a different lab partner my second summer in the lab. The daily lab notebooks were incredible handy in onboarding the new member.\n\n\n\n\n\n\nFigure 4: Example of daily notebook for documenting research progress. Structure includes overarching goals for the summer, action items for the day, a summary for what was finished, where we got stuck, and action items for the next day, and detailed notes of the procedure for the day.\n\n\n\nIn addition to daily lab notebooks, over the summer terms we had two presentations we gave to the rest of the research groups in the program as well as a summary of our summer progress in a white paper and a poster. The poster is presented at a gallery walk in front of the school where students and staff could ask about our experience and research in the lab (Figure 5).\n\n\n\n\n\n\nFigure 5: Monitoring the Rhizosphere poster for Fall 2026 summer research presentations."
+  },
+  {
+    "objectID": "research/biopho.html#white-paper-links",
+    "href": "research/biopho.html#white-paper-links",
+    "title": "Biophotonics Lab",
+    "section": "White Paper Links",
+    "text": "White Paper Links\nSummer 2025 Research Report Summer 2024 Research Report"
+  },
+  {
+    "objectID": "research/biopho.html#acknowledgements",
+    "href": "research/biopho.html#acknowledgements",
+    "title": "Biophotonics Lab",
+    "section": "Acknowledgements",
+    "text": "Acknowledgements\nI want to acknowledge my advisor Professor Brake for his incredible mentorship and for the opportunities he gave me to make the research my own. I got to lead and mold the project to to incorporate skills I had always wanted to learn or strengthen. I also want to acknowledge my incredible research team for creating an environment that I looked forward to coming to every day. And lastly, an acknowledgement to Harvey Mudd and the resources they provide to us students to be able to conduct research under close advising from our professors. I am extremely grateful for the research experiences I’ve been able to have here at Harvey Mudd."
+  },
+  {
+    "objectID": "research/posm.html",
+    "href": "research/posm.html",
+    "title": "Physics of Soft Matter (PoSM) Lab",
+    "section": "",
+    "text": "The Physics of Soft Matter (PoSM) Lab focuses on the research of soft elastic solids to understand biological movement and its applications in robotics. The Slingshot Spider project revolved around researching latch-mediated spring actuation through reproducing the slingshot spider’s elastic web in a bioinspired robotic mechanism."
+  },
+  {
+    "objectID": "research/posm.html#motivation",
+    "href": "research/posm.html#motivation",
+    "title": "Physics of Soft Matter (PoSM) Lab",
+    "section": "",
+    "text": "The Physics of Soft Matter (PoSM) Lab focuses on the research of soft elastic solids to understand biological movement and its applications in robotics. The Slingshot Spider project revolved around researching latch-mediated spring actuation through reproducing the slingshot spider’s elastic web in a bioinspired robotic mechanism."
+  },
+  {
+    "objectID": "research/posm.html#research-work",
+    "href": "research/posm.html#research-work",
+    "title": "Physics of Soft Matter (PoSM) Lab",
+    "section": "Research Work",
+    "text": "Research Work\nAlthough I only got to work on this project briefly, I really enjoyed the quick prototyping and experimenting with different web designs and materials. Throughout the semester, I worked on building and testing low resolution prototypes using embroidery hoops, string, tape, and sticky toys as projectiles.\n(insert a picture of the web prototype)\nOne notable prototype launched a sticky projectile onto the ceiling where it stayed for the rest of the semester. I explored different web designs to investigate the ways in which web geometry and materials and projectile material impacts performance and energy efficiency when launching."
+  },
+  {
+    "objectID": "research/posm.html#acknowledgements",
+    "href": "research/posm.html#acknowledgements",
+    "title": "Physics of Soft Matter (PoSM) Lab",
+    "section": "Acknowledgements",
+    "text": "Acknowledgements\nI want to acknowledge my advisor for this research project, Professor Ilton, for the opportunity to work in the PoSM lab. Unfortunately, the research project did not have enough funding to continue after the semester into the summer, but I am so grateful to the guidance of Professor Ilton on my first research project in undergrad."
+  }
+]
