@@ -1,0 +1,8 @@
+---
+title: "Leadership Experience"
+listing:
+    contents: leadership
+    sort: enddate
+    type: default
+    categories: false
+---

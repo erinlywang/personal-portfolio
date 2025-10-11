@@ -1,0 +1,13 @@
+---
+title: "YAPA Kids"
+description: "Worked on the executive board of an international non-profit teaching organization as the Director of HR."
+author: "Erin Wang"
+subtitle: "May 2020 - June 2022"
+enddate: 2022-06-01
+categories:
+  - Director of HR
+  - Non-profit
+  - Teaching
+draft: false
+---
+
