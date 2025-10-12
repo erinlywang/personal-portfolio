@@ -1,6 +1,7 @@
 ---
 title: "Tau Beta Pi"
 description: "Tau Beta Pi Honors Society for engineering students. "
+image: images/tbp_logo.jpeg
 author: "Erin Wang"
 subtitle: "August 2025 - Present"
 enddate: 2025-05-01
@@ -8,6 +9,7 @@ categories:
   - Tau Beta Pi
   - Tutoring
   - Volunteering
+  - Electrical Engineering
 draft: false
 ---
 

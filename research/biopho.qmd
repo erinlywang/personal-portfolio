@@ -11,9 +11,6 @@ categories:
   - python programming
   - data analysis
 draft: false
-jupyter: python3
-code-block-bg: true
-code-block-border-left: "#419aecff"
 ---
 ## Motivation
 The [Biophotonics Lab](https://pages.hmc.edu/biophotonics/) at Harvey Mudd College focuses on building optical tools for applications in biomedicine and agriculture.
@@ -43,228 +40,229 @@ However, due to the sensitivity of our system to miniscule changes in the enviro
 Towards the end of the summer, I wrote a Python script on Colab to simulate and understand the expected interference pattern and coherence length of a monochrome (single wavelength) source versus a broadband source. Then, I designed, built, and aligned an LCI interferometer with a near-infrared super luminescent diode as its broadband source. The end of the summer was the beginning of attempting to verify the LCI setup using a TIR retroreflector as the sample. I wrote a program incorporating the `nidaqmx` and `pylablib` packages to automate collecting data while moving the reference mirror stage (see code block below).  
 
 <details>
-<summary>Code: My non-executable code</summary>
-```{.python filename="LCISweepCONTINUOUS.py"}
-from pylablib.devices import Thorlabs
-import nidaqmx
-from nidaqmx.constants import TerminalConfiguration, AcquisitionType, READ_ALL_AVAILABLE
-import matplotlib.pyplot as plt
-import csv
-import numpy as np
-import os
-import time
-from datetime import datetime
-from scipy.fft import fft, fftfreq
-from scipy.optimize import curve_fit
+<summary>LCISweepCONTINUOUS.py</summary>
 
-def create_folder(folder_name):
-    try:
-        os.mkdir(folder_name)
-        print(f"Folder '{folder_name}' created successfully.")
-    except FileExistsError:
-        print(f"Folder '{folder_name}' already exists.")
-    except Exception as e:
-        print(f"An error occurred: {e}")
+```
+    from pylablib.devices import Thorlabs
+    import nidaqmx
+    from nidaqmx.constants import TerminalConfiguration, AcquisitionType, READ_ALL_AVAILABLE
+    import matplotlib.pyplot as plt
+    import csv
+    import numpy as np
+    import os
+    import time
+    from datetime import datetime
+    from scipy.fft import fft, fftfreq
+    from scipy.optimize import curve_fit
 
-def move_to_folder(folder_name):
-    try:
-        os.chdir(folder_name)
-        print(f"Current directory changed to: {os.getcwd()}")
-    except FileNotFoundError:
-        print(f"Folder '{folder_name}' not found.")
-    except NotADirectoryError:
-        print(f"'{folder_name}' is not a directory.")
-    except Exception as e:
-        print(f"An error occurred: {e}")
+    def create_folder(folder_name):
+        try:
+            os.mkdir(folder_name)
+            print(f"Folder '{folder_name}' created successfully.")
+        except FileExistsError:
+            print(f"Folder '{folder_name}' already exists.")
+        except Exception as e:
+            print(f"An error occurred: {e}")
 
-def create_csv_file(filename, fields, datarows):
-    with open(filename, 'w') as csvfile:
-        # create csv writer object
-        csvwriter = csv.writer(csvfile, lineterminator='\n')
+    def move_to_folder(folder_name):
+        try:
+            os.chdir(folder_name)
+            print(f"Current directory changed to: {os.getcwd()}")
+        except FileNotFoundError:
+            print(f"Folder '{folder_name}' not found.")
+        except NotADirectoryError:
+            print(f"'{folder_name}' is not a directory.")
+        except Exception as e:
+            print(f"An error occurred: {e}")
 
-        # writing the fields
-        csvwriter.writerow(fields)
+    def create_csv_file(filename, fields, datarows):
+        with open(filename, 'w') as csvfile:
+            # create csv writer object
+            csvwriter = csv.writer(csvfile, lineterminator='\n')
 
-        # writing the data rows
-        csvwriter.writerows(datarows)
+            # writing the fields
+            csvwriter.writerow(fields)
 
-def take_data():
+            # writing the data rows
+            csvwriter.writerows(datarows)
+
+    def take_data():
+        with nidaqmx.Task() as task:
+            task.ai_channels.add_ai_voltage_chan("Dev1/ai1", 
+                                                max_val=10, 
+                                                terminal_config= TerminalConfiguration.RSE)
+
+            task.timing.cfg_samp_clk_timing(1000000, 
+                                            sample_mode=AcquisitionType.FINITE, 
+                                            samps_per_chan=1000)
+            rawdata = task.read(READ_ALL_AVAILABLE)
+        return rawdata
+
+    def find_amp(data):
+        sorted_data = sorted(data)
+
+        # calculate minimum average of bottom 100 values
+        averagemin = np.mean(sorted_data[0:99])
+
+        # calculate maximum average of top 100 values
+        averagemax = np.mean(sorted_data[len(sorted_data)-100:len(sorted_data)])
+
+        # calculate amplitude
+        amplitude = averagemax - averagemin
+        return amplitude
+
+    def find_average(matrix):
+        # Calculate the average of each row
+        averages = np.mean(matrix, axis=1)
+        avg_amplitudes = list(map(float, averages))
+        return avg_amplitudes
+
+    def find_std(matrix):
+        # Calculate the standard deviation of each row
+        std_devs = np.std(matrix, axis=1)
+        std_amplitudes = list(map(float, std_devs))
+        return std_amplitudes
+
+    def get_serial(value):
+        devices = Thorlabs.list_kinesis_devices()
+        device_tuple = devices[value]
+        serial = device_tuple[0]
+        return serial
+
+    def get_devices():
+        print(Thorlabs.list_kinesis_devices())
+
+    ## Define class for Kinesis stage
+
+    class KinesisStage(Thorlabs.KinesisPiezoMotor):
+        def __init__(self, serial):
+            super().__init__(serial)
+
+        def set_def_channel(self, value):
+            self.set_default_channel(value)
+            print(" Default channel:", value)
+
+        def move_forward(self, value):
+            self.move_by(value)
+            time.sleep(4)
+            print("Stage moved forward by " + str(value) + ".")
+            position = self.get_position()
+            print("Current Position: ", position)
+
+        def move_back(self, value):
+            self.move_by(-value)
+            time.sleep(4)
+            print("Stage moved backward by " + str((-value)) + ".")
+            position = self.get_position()
+            print("Current Position: ", position)
+
+        def zero_position(self):
+            self.move_to(0)
+            time.sleep(4)
+            print("Stage position set to 0.")
+            position = self.get_position()
+            print("Current Position: ", position)
+
+
+    # Get serial number of motor
+    serial = get_serial(0)
+
+    # Make stage object to move stage
+    stage = KinesisStage(serial)
+    stage.set_def_channel(2)
+
+    # Set up how many test and trials and date
+    testnum = 1
+    trialnum = 1
+    date = datetime.now().strftime("%m-%d-%y")
+
+    test_folder = "Test " + str(testnum)
+
+    create_folder(test_folder)
+    move_to_folder(test_folder)
+
+    # Set up initial parameters for collecting sweep data
+    sample_rate = 1000000  # Sample rate in Hz
+    sample_count = 1000  # Number of samples to collect
+
+    # setup lists to store data for each input voltage
+    trial_var = {}
+    N_x = 100
+    start_pos = 5000000
+    end_pos = start_pos-100000-N_x
+    x = np.arange(start_pos, end_pos, -N_x) 
+
+    # Set the stage to the initial point
+    stage.move_to(start_pos)
+
+
+    # setup lists to store fields for csv files
+    test_fields = ['x position']
+    for number in range(1, trialnum+1):
+        test_fields.append(f'Trial {number}')
+
+    test_data = list(x)
+
+    current_position = stage.get_position()
+
+    trial_data = []
+        
     with nidaqmx.Task() as task:
         task.ai_channels.add_ai_voltage_chan("Dev1/ai1", 
                                             max_val=10, 
                                             terminal_config= TerminalConfiguration.RSE)
 
         task.timing.cfg_samp_clk_timing(1000000, 
-                                        sample_mode=AcquisitionType.FINITE, 
-                                        samps_per_chan=1000)
-        rawdata = task.read(READ_ALL_AVAILABLE)
-    return rawdata
-
-def find_amp(data):
-    sorted_data = sorted(data)
-
-    # calculate minimum average of bottom 100 values
-    averagemin = np.mean(sorted_data[0:99])
-
-    # calculate maximum average of top 100 values
-    averagemax = np.mean(sorted_data[len(sorted_data)-100:len(sorted_data)])
-
-    # calculate amplitude
-    amplitude = averagemax - averagemin
-    return amplitude
-
-def find_average(matrix):
-    # Calculate the average of each row
-    averages = np.mean(matrix, axis=1)
-    avg_amplitudes = list(map(float, averages))
-    return avg_amplitudes
-
-def find_std(matrix):
-    # Calculate the standard deviation of each row
-    std_devs = np.std(matrix, axis=1)
-    std_amplitudes = list(map(float, std_devs))
-    return std_amplitudes
-
-def get_serial(value):
-    devices = Thorlabs.list_kinesis_devices()
-    device_tuple = devices[value]
-    serial = device_tuple[0]
-    return serial
-
-def get_devices():
-    print(Thorlabs.list_kinesis_devices())
-
-## Define class for Kinesis stage
-
-class KinesisStage(Thorlabs.KinesisPiezoMotor):
-    def __init__(self, serial):
-        super().__init__(serial)
-
-    def set_def_channel(self, value):
-        self.set_default_channel(value)
-        print(" Default channel:", value)
-
-    def move_forward(self, value):
-        self.move_by(value)
-        time.sleep(4)
-        print("Stage moved forward by " + str(value) + ".")
-        position = self.get_position()
-        print("Current Position: ", position)
-
-    def move_back(self, value):
-        self.move_by(-value)
-        time.sleep(4)
-        print("Stage moved backward by " + str((-value)) + ".")
-        position = self.get_position()
-        print("Current Position: ", position)
-
-    def zero_position(self):
-        self.move_to(0)
-        time.sleep(4)
-        print("Stage position set to 0.")
-        position = self.get_position()
-        print("Current Position: ", position)
+                                        sample_mode=AcquisitionType.CONTINUOUS, 
+                                        samps_per_chan=50000)
+        
+        task.start()
+        print('Task started.    Data acquiring...')
+        while current_position > end_pos:
+            stage.jog('-')
+            rawdata = task.read(number_of_samples_per_channel=100)
+            rawdata_avg = np.average(rawdata)
+            trial_data.append(rawdata_avg)
+        task.stop()
+        print('Task stopped.')
 
 
-# Get serial number of motor
-serial = get_serial(0)
+    # time.sleep(0.5)
 
-# Make stage object to move stage
-stage = KinesisStage(serial)
-stage.set_def_channel(2)
-
-# Set up how many test and trials and date
-testnum = 1
-trialnum = 1
-date = datetime.now().strftime("%m-%d-%y")
-
-test_folder = "Test " + str(testnum)
-
-create_folder(test_folder)
-move_to_folder(test_folder)
-
-# Set up initial parameters for collecting sweep data
-sample_rate = 1000000  # Sample rate in Hz
-sample_count = 1000  # Number of samples to collect
-
-# setup lists to store data for each input voltage
-trial_var = {}
-N_x = 100
-start_pos = 5000000
-end_pos = start_pos-100000-N_x
-x = np.arange(start_pos, end_pos, -N_x) 
-
-# Set the stage to the initial point
-stage.move_to(start_pos)
-
-
-# setup lists to store fields for csv files
-test_fields = ['x position']
-for number in range(1, trialnum+1):
-    test_fields.append(f'Trial {number}')
-
-test_data = list(x)
-
-current_position = stage.get_position()
-
-trial_data = []
-    
-with nidaqmx.Task() as task:
-    task.ai_channels.add_ai_voltage_chan("Dev1/ai1", 
-                                        max_val=10, 
-                                        terminal_config= TerminalConfiguration.RSE)
-
-    task.timing.cfg_samp_clk_timing(1000000, 
-                                    sample_mode=AcquisitionType.CONTINUOUS, 
-                                    samps_per_chan=50000)
-    
-    task.start()
-    print('Task started.    Data acquiring...')
-    while current_position > end_pos:
-        stage.jog('-')
-        rawdata = task.read(number_of_samples_per_channel=100)
-        rawdata_avg = np.average(rawdata)
-        trial_data.append(rawdata_avg)
-    task.stop()
-    print('Task stopped.')
-
-
-# time.sleep(0.5)
-
-# rawdata = take_data()
+    # rawdata = take_data()
 
 
 
-test_data = np.vstack([test_data, trial_data])
-stage.stop()
+    test_data = np.vstack([test_data, trial_data])
+    stage.stop()
 
-# Create a csv file with the position and all the trial data
-testfilename = date + '_ALLTRIALSLCISweep_Test' + str(testnum) + '.csv'
-test_datarows = np.transpose(test_data)
-create_csv_file(testfilename, test_fields, test_datarows)
+    # Create a csv file with the position and all the trial data
+    testfilename = date + '_ALLTRIALSLCISweep_Test' + str(testnum) + '.csv'
+    test_datarows = np.transpose(test_data)
+    create_csv_file(testfilename, test_fields, test_datarows)
 
-## Find average of all trials
+    ## Find average of all trials
 
-test_data_nox = test_datarows[:,1:]         # removes x position column
-averages = find_average(test_data_nox)
-std_devs = find_std(test_data_nox)
-avg_test_data = np.transpose(np.vstack([list(x),averages,std_devs]))
+    test_data_nox = test_datarows[:,1:]         # removes x position column
+    averages = find_average(test_data_nox)
+    std_devs = find_std(test_data_nox)
+    avg_test_data = np.transpose(np.vstack([list(x),averages,std_devs]))
 
-avgdatafields = ['x position', 'Average Vout [V]', 'Standard Dev [V]']
-avgdataname = date + '_AveragedLCISweep_Test' + str(testnum) 
-avgdatafilename = avgdataname + '.csv'
-create_csv_file(avgdatafilename, avgdatafields, avg_test_data)
+    avgdatafields = ['x position', 'Average Vout [V]', 'Standard Dev [V]']
+    avgdataname = date + '_AveragedLCISweep_Test' + str(testnum) 
+    avgdatafilename = avgdataname + '.csv'
+    create_csv_file(avgdatafilename, avgdatafields, avg_test_data)
 
-# save plot of data for each trial and vin
-plt.figure()
-plt.errorbar(list(x), averages, yerr=std_devs, fmt='o')
-plt.xlabel("x position")
-plt.ylabel('Voltage [V]')
-plt.title("Test " + str(testnum) + ": LCI Sweep Data")
-plt.savefig(avgdataname +'.png')
-# plt.show(block=True)
+    # save plot of data for each trial and vin
+    plt.figure()
+    plt.errorbar(list(x), averages, yerr=std_devs, fmt='o')
+    plt.xlabel("x position")
+    plt.ylabel('Voltage [V]')
+    plt.title("Test " + str(testnum) + ": LCI Sweep Data")
+    plt.savefig(avgdataname +'.png')
+    # plt.show(block=True)
 
-os.chdir('..')        
+    os.chdir('..')        
 ```
 </details>
 

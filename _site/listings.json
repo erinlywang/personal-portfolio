@@ -11,9 +11,17 @@
     "listing": "/projects.html",
     "items": [
       "/academic/underwaterrobot.html",
-      "/academic/contract.html",
       "/academic/trilobio.html",
+      "/academic/contract.html",
       "/academic/xdemics.html"
+    ]
+  },
+  {
+    "listing": "/leadership.html",
+    "items": [
+      "/leadership/yapakids.html",
+      "/leadership/e79ae.html",
+      "/leadership/tbp.html"
     ]
   },
   {
