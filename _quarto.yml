@@ -17,9 +17,9 @@ website:
       - href: personalproj.qmd
         text: Personal Projects
         icon: person-heart
+      - href: leadership.qmd
         text: Leadership
         icon: people-fill
-        href: leadership.qmd
 
       
 
