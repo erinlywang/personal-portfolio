@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Erin Wang">
-<meta name="description" content="Building an animatronic designed after the main robot from the REPO game">
+<meta name="description" content="Tau Beta Pi Honors Society for engineering students.">
 
-<title>REPO Project – Erin Wang Portfolio</title>
+<title>Tau Beta Pi – Erin Wang Portfolio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -163,41 +163,27 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#motivation" id="toc-motivation" class="nav-link active" data-scroll-target="#motivation">Motivation</a></li>
-  <li><a href="#project-work" id="toc-project-work" class="nav-link" data-scroll-target="#project-work">Project Work</a>
-  <ul class="collapse">
-  <li><a href="#eye-prototype-2-four-motor-socket" id="toc-eye-prototype-2-four-motor-socket" class="nav-link" data-scroll-target="#eye-prototype-2-four-motor-socket">Eye Prototype 2: Four Motor Socket</a></li>
-  <li><a href="#current-and-future-direction" id="toc-current-and-future-direction" class="nav-link" data-scroll-target="#current-and-future-direction">Current and Future Direction</a></li>
-  </ul></li>
-  <li><a href="#documentation" id="toc-documentation" class="nav-link" data-scroll-target="#documentation">Documentation</a></li>
-  <li><a href="#acknowledgements" id="toc-acknowledgements" class="nav-link" data-scroll-target="#acknowledgements">Acknowledgements</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">REPO Project</h1>
-<p class="subtitle lead">May 2025 - Present</p>
+<h1 class="title">Tau Beta Pi</h1>
+<p class="subtitle lead">August 2025 - Present</p>
   <div class="quarto-categories">
-    <div class="quarto-category">robotics</div>
-    <div class="quarto-category">automation</div>
-    <div class="quarto-category">servo</div>
-    <div class="quarto-category">CAD Design</div>
-    <div class="quarto-category">STM32 interface</div>
+    <div class="quarto-category">Tau Beta Pi</div>
+    <div class="quarto-category">Tutoring</div>
+    <div class="quarto-category">Volunteering</div>
+    <div class="quarto-category">Electrical Engineering</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    Building an animatronic designed after the main robot from the REPO game
+    Tau Beta Pi Honors Society for engineering students.
   </div>
 </div>
 
@@ -220,67 +206,10 @@ window.Quarto = {
 </header>
 
 
-<section id="motivation" class="level2">
-<h2 class="anchored" data-anchor-id="motivation">Motivation</h2>
-<p>My dream job is to actually work in the animatronic industry designing and building robots for theme park rides. I’m drawn to the combination of art, design, and engineering and the work of replicating biological motion in robotics that animatronics provides. However, there are very limited projects, classes, and clubs at my school to work on robotics and mechatronics. This summer, while doing research in the Biophotonics lab, I met Natalie Ko who is also interested in animatronics. We decided to start a personal project of building our own small animatronic over the summer and the following school year.</p>
-<p>We decided on building the robot character from the game REPO. We took inspiration from an Instagram creator who builds and programs animatronics and had made a REPO robot with eyes that could move in different directions, arms that flap up and down, and a jaw that opens upon audio recognition. The project seemed feasible to do given the components are 3D printed and the motors are off-the-shelf 180^{o} servo motors.</p>
-</section>
-<section id="project-work" class="level2">
-<h2 class="anchored" data-anchor-id="project-work">Project Work</h2>
-<p>Over the summer we focused on building the eye mechanism as we believed the eyes would likely be one of the most difficult parts of the design. ### Eye Prototype 1: The Swing Grabbing inspiration from a Youtube video on building animatronic eyes, we first started with an eye prototype that incorporated individual horizontal motion but shared vertical motion. The design required three servos, two servos for the horizontal movement of each eye, and then one servo to control the vertical movement through a swing that the both eyes sit on (<a href="#fig-eyeprot1" class="quarto-xref">Figure&nbsp;1</a>).</p>
-<div id="fig-eyeprot1" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-eyeprot1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/eyeprot1.jpg" class="img-fluid figure-img">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-eyeprot1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: First eye prototype with two servos to control the horizontal motion of each eye. The image shows the prototype’s ability to perform “cross-eye” motion. However, the prototype’s “outward-eye” motion was much more limited than desired.
-</figcaption>
-</figure>
-</div>
-<p>The biggest challenge we ran into with this prototype was the length of the horizontal arm that attached to the eye as the length allowed for a greater degree of movement in one horizontal direction and not the other. The complexity of the swing and its placement would also further affect the flexibility of movement of the horizontal servos. So instead we decided to forego the swing prototype and try controlling each eye individually.</p>
-<section id="eye-prototype-2-four-motor-socket" class="level3">
-<h3 class="anchored" data-anchor-id="eye-prototype-2-four-motor-socket">Eye Prototype 2: Four Motor Socket</h3>
-<p>This prototype gets its name from using four servo motors to control both eyes (two for each eye) such that each eye is able to move independently as well as the ball-socket rods that were used to allow for the eye to rotate without translating from its position (<a href="#fig-eyeprot2" class="quarto-xref">Figure&nbsp;2</a>).</p>
-<div id="fig-eyeprot2" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-eyeprot2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/eyeprot2.jpg" class="img-fluid figure-img">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-eyeprot2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2: Second eye prototype with four servos: one for horizontal motion and one for vertical motion of an individual eye. The image shows the prototype’s attachment system to the eye itself and to the base that would attach to the head of the robot.
-</figcaption>
-</figure>
-</div>
-<p>The biggest challenge we ran into with this prototype was figuring out the right eye size to allow large movement but still stay true to the robot’s character design as well as the length of the rods connecting the servo and the ball/joint attached to the eye. However, this prototype was succesful! It provided a desirable motion range without translating meaning the eye will move around without getting stuck on the eye sockets of the robot’s head.</p>
-</section>
-<section id="current-and-future-direction" class="level3">
-<h3 class="anchored" data-anchor-id="current-and-future-direction">Current and Future Direction</h3>
-<p>We are currently making slow progress due to classes being in session. But our next steps are to design the jaw mechanism that rotates the head of the robot up around a hinge and separates the head from the bottom body to look like a the in-game character when its mouth is agape (<a href="#fig-jaw" class="quarto-xref">Figure&nbsp;3</a>).</p>
-<div id="fig-jaw" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-jaw-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/repojawopen.jpg" class="img-fluid figure-img">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-jaw-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3: REPO Robot character in-game opening its jaw.
-</figcaption>
-</figure>
-</div>
-<p>Future work will include designing the electrical components such as the microphone to intake audio and open the jaw accordingly as well as programming the arduino code to move the eyes in a random or set pathway.</p>
-</section>
-</section>
-<section id="documentation" class="level2">
-<h2 class="anchored" data-anchor-id="documentation">Documentation</h2>
-<p>All CAD files and research are saved within an internally shared Google Drive. However, we would like to publish a Github Repo containing CAD files and software programs such that others can follow our project and build their own robot.</p>
-</section>
-<section id="acknowledgements" class="level2">
-<h2 class="anchored" data-anchor-id="acknowledgements">Acknowledgements</h2>
-<p>I would like to acknowledge the Makerspace at Harvey Mudd College. This space hosts 3D printers and laser cutters for the students to use. Much of this project could not be realized without access to these resources. And a thanks to Natalie Ko for bringing this project to life with me!</p>
+<p>I am part of Harvey Mudd’s Tau Beta Pi (TBP) chapter. The major eligibility requirement for TBP is to be in the top eighth of one’s junior class or the top fifth of one’s senior class. Although I was eligible junior year, I joined my senior year due to class load my junior year. In TBP, I volunteer as a tutor for the required engineering classes at Harvey Mudd. This first semester of TBP, I am tutoring for the Electronic and Magnetic Circuits and Devices class (ENGR084). As a tutor I focus on deep understanding of material and key concepts rather than answers.</p>
 
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
