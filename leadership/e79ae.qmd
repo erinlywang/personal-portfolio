@@ -1,0 +1,13 @@
+---
+title: "Academic Excellence"
+description: "Academic Excellence for Harvey Mudd's Introduction to Engineering Systems"
+author: "Erin Wang"
+subtitle: "August 2024 - Present"
+enddate: 2025-05-01
+categories:
+  - Tutoring
+  - Systems Engineering
+draft: false
+---
+
+The Academic Excellence Program at Harvey Mudd is lead by student facilitators recommended by their major departments to host workshops in the academic core to help students strengthen their understanding in the class material. I am currently part of AE for the Introduction to Engineering System (ENGR079 or E79). In E79 AE, I work with students from various backgrounds looking to do various majors to practice systems engineering concepts like Laplace transformations, transfer functions, bode plots, etc. My role as an AE tutor is to provide an accessible and comfortable environment to ask questions as well as engage students across the STEM majors with the engineering material. 

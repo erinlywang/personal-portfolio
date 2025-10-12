@@ -1,0 +1,14 @@
+---
+title: "Tau Beta Pi"
+description: "Tau Beta Pi Honors Society for engineering students. "
+author: "Erin Wang"
+subtitle: "August 2025 - Present"
+enddate: 2025-05-01
+categories:
+  - Tau Beta Pi
+  - Tutoring
+  - Volunteering
+draft: false
+---
+
+I am part of Harvey Mudd's Tau Beta Pi (TBP) chapter. The major eligibility requirement for TBP is to be in the top eighth of one's junior class or the top fifth of one's senior class. Although I was eligible junior year, I joined my senior year due to class load my junior year. In TBP, I volunteer as a tutor for the required engineering classes at Harvey Mudd. This first semester of TBP, I am tutoring for the Electronic and Magnetic Circuits and Devices class (ENGR084). As a tutor I focus on deep understanding of material and key concepts rather than answers.  
