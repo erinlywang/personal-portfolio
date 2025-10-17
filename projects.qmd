@@ -1,5 +1,5 @@
 ---
-title: "Academic Projects and Contract Work"
+title: "Work Experience and Academic Projects"
 listing:
     contents: academic
     sort: enddate
