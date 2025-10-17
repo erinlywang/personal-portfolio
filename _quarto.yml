@@ -9,7 +9,7 @@ website:
         text: Home
         icon: house-heart-fill
       - href: projects.qmd
-        text: Academic Projects
+        text: Work Experience + Academic Projects
         icon: mortarboard-fill
       - href: research.qmd
         text: Research
