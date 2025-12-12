@@ -6,7 +6,7 @@ about:
     links:
         - icon: linkedin
           text: LinkedIn
-          href: www.linkedin.com/in/erin-wang-1458a9236
+          href: https://www.linkedin.com/in/erin-wang-1458a9236
         - icon: github
           text: Github
           href: https://github.com/erinlywang
