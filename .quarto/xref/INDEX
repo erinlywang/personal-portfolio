@@ -1,0 +1,50 @@
+{
+  "academic/contract.qmd": {
+    "contract.html": "47f8def7"
+  },
+  "academic/trilobio.qmd": {
+    "trilobio.html": "ddfee886"
+  },
+  "academic/underwaterrobot.qmd": {
+    "underwaterrobot.html": "0776e779"
+  },
+  "academic/xdemics.qmd": {
+    "xdemics.html": "139a666d"
+  },
+  "leadership/e79ae.qmd": {
+    "e79ae.html": "f8fa6c91"
+  },
+  "leadership/tbp.qmd": {
+    "tbp.html": "a266ef42"
+  },
+  "leadership/yapakids.qmd": {
+    "yapakids.html": "50c25fe8"
+  },
+  "leadership.qmd": {
+    "leadership.html": "06856b25"
+  },
+  "personalproj/repo.qmd": {
+    "repo.html": "60f26caf"
+  },
+  "personalproj.qmd": {
+    "personalproj.html": "0af6f739"
+  },
+  "projects.qmd": {
+    "projects.html": "e790b324"
+  },
+  "research/biopho.qmd": {
+    "biopho.html": "d4939507"
+  },
+  "research/dolab.qmd": {
+    "dolab.html": "5d628397"
+  },
+  "research/posm.qmd": {
+    "posm.html": "94c6d847"
+  },
+  "research.qmd": {
+    "research.html": "e62407f6"
+  },
+  "index.qmd": {
+    "index.html": "56ff14b5"
+  }
+}
