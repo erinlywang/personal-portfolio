@@ -1,0 +1,50 @@
+{
+  "academic/contract.qmd": {
+    "contract.html": "9c39141f"
+  },
+  "academic/trilobio.qmd": {
+    "trilobio.html": "a7cb59d1"
+  },
+  "academic/underwaterrobot.qmd": {
+    "underwaterrobot.html": "52c7a6d2"
+  },
+  "academic/xdemics.qmd": {
+    "xdemics.html": "a6cbba35"
+  },
+  "index.qmd": {
+    "index.html": "17d6ccf0"
+  },
+  "leadership/e79ae.qmd": {
+    "e79ae.html": "74f438a8"
+  },
+  "leadership/tbp.qmd": {
+    "tbp.html": "c7d59d72"
+  },
+  "leadership/yapakids.qmd": {
+    "yapakids.html": "acafc446"
+  },
+  "leadership.qmd": {
+    "leadership.html": "65dfa6ca"
+  },
+  "personalproj/repo.qmd": {
+    "repo.html": "8fe6143c"
+  },
+  "personalproj.qmd": {
+    "personalproj.html": "0c7ae2ce"
+  },
+  "projects.qmd": {
+    "projects.html": "9a2ed69e"
+  },
+  "research/biopho.qmd": {
+    "biopho.html": "d17ab3b0"
+  },
+  "research/dolab.qmd": {
+    "dolab.html": "ab4da72b"
+  },
+  "research/posm.qmd": {
+    "posm.html": "c7fc9a12"
+  },
+  "research.qmd": {
+    "research.html": "0844e99d"
+  }
+}
